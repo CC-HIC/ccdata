@@ -1,0 +1,117 @@
+NIHR_HIC_ICU_0001:
+  shortName: pas_id
+  dataItem: PAS number
+NIHR_HIC_ICU_0073:
+  shortName: nhs_id
+  dataItem: NHS number
+NIHR_HIC_ICU_0108:
+  shortName: hrate
+  dataItem: Heart rate
+  distribution: normal
+  decimal_places: 0
+  range:
+    labels:
+      red: (0, 300)
+      amber: (11, 170) 
+      green: (60, 100)
+    apply: drop_entry
+  # missingness:
+  #   labels:
+  #     yellow: 24
+  #   accept_2d:
+  #     yellow: 70 
+  #   impute_2d:
+  #     lead: 3
+  #     lag: 3
+  #     fun: median
+  #   apply: drop_episode
+NIHR_HIC_ICU_0122:
+  shortName: lac_bg
+  dataItem: Lactate - ABG
+  distribution: skewed
+  decimal_places: 1
+  range:
+    labels:
+      red: (0, 30)
+      amber: (0.1, 20) 
+      green: (0.4, 2.2)
+    apply: drop_entry
+  # missingness:
+  #   labels:
+  #     yellow: 24
+  #   accept_2d:
+  #     yellow: 70 
+  #   impute_2d:
+  #     lead: 4
+  #     lag: 4
+  #     fun: median
+  #   apply: drop_episode
+# NIHR_HIC_ICU_0093:
+#   shortName: sex
+#   dataItem: Sex
+#   distribution: binary
+#   # - [ ] NOTE(2016-06-28): won't work b/c hashed
+#   # category:
+#   #   levels: # beware case-sensitive
+#   #     M: male
+#   #     F: female
+NIHR_HIC_ICU_0097:
+  shortName: dead_icu
+  dataItem: Dead or alive on discharge
+  distribution: binary
+  category:
+    levels:
+      A: Alive
+      D: Dead
+      E: Alive - not discharged
+    apply: drop_entry
+NIHR_HIC_ICU_0930:
+  shortName: ult_dead_icu
+  dataItem: Status at ultimate discharge from ICUHDU
+  distribution: binary
+  category:
+    levels:
+      A: Alive
+      D: Dead
+      E: Alive - not discharged
+    apply: drop_entry
+NIHR_HIC_ICU_0112:
+  shortName: bp_sys_a
+  dataItem: Systolic Arterial blood pressure - Art BPSystolic Arterial blood pressure
+  distribution: normal
+  decimal_places: 0
+  range:
+    labels:
+      red: (0, 300)
+      amber: (50, 220) 
+      green: (80, 120)
+    apply: drop_entry
+#  missingness:
+#    labels:
+#      yellow: 24
+#      accept_2d:
+#        yellow: 70 
+#      impute_2d:
+#        lead: 3
+#        lag: 3
+#        fun: median
+NIHR_HIC_ICU_0113:
+  shortName: bp_sys_ni
+  dataItem: Systolic Arterial blood pressure - NBPSystolic Arterial blood pressure
+  distribution: normal
+  decimal_places: 0
+  range:
+    labels:
+      red: (0, 300)
+      amber: (50, 220) 
+      green: (80, 120) 
+    apply: drop_entry
+#  missingness:
+#      labels:
+#          yellow: 24
+#      accept_2d:
+#          yellow: 70 
+#      impute_2d:
+#          lead: 3
+#          lag: 3
+#          fun: median

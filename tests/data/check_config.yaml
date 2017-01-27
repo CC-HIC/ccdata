@@ -1,0 +1,29 @@
+# 0 - unaccepted
+# 1 - indeterminable
+# 2 - accepted
+# 3 - normal
+Heart_rate:
+    NHIC: NIHR_HIC_ICU_0108
+    type: numeric
+    range:
+        normal: 40 - 120
+        accept: 0 - 200
+        unusual: 0 - 250
+
+Creatinine:
+    NHIC: NIHR_HIC_ICU_0166
+    type: numeric
+    range:
+        accept: 0 - 5000
+
+Bpsys:
+    desctiption: Systolic Arterial blood pressure
+        systolic and paired diastolic blood pressure, measured and recorded on visit arrival and prior to any therapeutic intervention provided by the visiting team(critical care outreach service (or equivalent) or critical care unit nursing/medical (non-outreach) staff)
+        - measurements performed immediately prior to visit arrival may be recorded if the value would be used as part of the clinical assessment at that time
+        - blood pressure values are included irrespective of measurement method used.
+        - blood pressure values measured during a period of iatrogenic disturbance e.g. physiotherapy, turning, periods of crying, etc. should not be recorded
+        - where blood pressure values are undetectable, the value zero should be recorded.
+    NHIC: NIHR_HIC_ICU_0112
+    type: numeric
+    range:
+        accept: 20 - 300

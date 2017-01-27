@@ -1,0 +1,46 @@
+Package: ccdata
+Type: Package
+Title: The critical care clinical data toolbox
+Version: 0.1.0
+Date: 2016-11-10
+Author: Steve Harris, Sinan Shi, David Perez-Suarez
+Maintainer: Sinan Shi <s.shi@ucl.ac.uk>
+Description: The package contains essential tools and utility functions to
+    facilitate the data processing pipeline, data cleaning and data analysing of
+    clinical data from Critical Care - Health Informatics Collaborative (CC-HIC).
+Depends:
+    R (>= 3.1.0)
+License: GPL-3
+LinkingTo: Rcpp
+Suggests:
+    testthat
+Imports:
+    data.table,
+    XML,
+    yaml,
+    Rcpp,
+    methods, 
+    knitr, 
+    ggplot2, 
+    pander
+RoxygenNote: 5.0.1
+Collate:
+    'RcppExports.R'
+    'ccRecord.R'
+    'ccTable.R'
+    'create2dclean.R'
+    'data.quality.report.R'
+    'deltaTime.R'
+    'filter.categorical.R'
+    'filter.missingness.R'
+    'filter.range.R'
+    'imputation.R'
+    'pipeline.R'
+    'reallocateTime.R'
+    'selectTable.R'
+    'sql_demographic.R'
+    'stdid.R'
+    'unique.spell.R'
+    'utilities.R'
+    'xml2ccdata.R'
+    'zzz.R'

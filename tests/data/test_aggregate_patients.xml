@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<d:document xmlns:d="http://nihr.ac.uk/nhic/ICU/UCL/finalv8.3.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://nihr.ac.uk/nhic/ICU/UCL/finalv8.3.2">
+    <d:context>
+        <d:metadata>
+            <d:dateCreated>2015-03-03T13:58:07</d:dateCreated>
+            <d:site>UCL</d:site>
+            <d:theme>ICU</d:theme>
+            <d:datasetVersion>v8.3.2</d:datasetVersion>
+        </d:metadata>
+        <d:data>
+            <d:subject>
+                <d:Numerical_national><d:NIHR_HIC_ICU_0073 m="2015-02-26">nhs_1</d:NIHR_HIC_ICU_0073></d:Numerical_national>
+                <d:Numerical_local><d:NIHR_HIC_ICU_0001 m="2015-02-26">pas_1</d:NIHR_HIC_ICU_0001></d:Numerical_local>
+                <d:Hospital_discharge><d:Date><d:NIHR_HIC_ICU_0406 m="2015-02-26">2014-02-07</d:NIHR_HIC_ICU_0406></d:Date></d:Hospital_discharge>
+                <d:Heart_rate>
+                    <d:physiology-cardiovascular-heart-rate>
+                        <d:NIHR_HIC_ICU_0108 m="2015-02-26">103</d:NIHR_HIC_ICU_0108>
+                        <d:NIHR_HIC_ICU_0254 m="2015-02-26">2014-02-01T10:00:00</d:NIHR_HIC_ICU_0254>
+                    </d:physiology-cardiovascular-heart-rate>
+                    <d:physiology-cardiovascular-heart-rate>
+                        <d:NIHR_HIC_ICU_0108 m="2015-02-26">93</d:NIHR_HIC_ICU_0108>
+                        <d:NIHR_HIC_ICU_0254 m="2015-02-26">2014-02-01T11:00:00</d:NIHR_HIC_ICU_0254>
+                    </d:physiology-cardiovascular-heart-rate>
+                    <d:physiology-cardiovascular-heart-rate>
+                        <d:NIHR_HIC_ICU_0108 m="2015-02-26">89</d:NIHR_HIC_ICU_0108>
+                        <d:NIHR_HIC_ICU_0254 m="2015-02-26">2014-02-01T12:00:00</d:NIHR_HIC_ICU_0254>
+                    </d:physiology-cardiovascular-heart-rate>
+                </d:Heart_rate>
+            </d:subject>
+
+            <d:subject>
+                <d:Numerical_national><d:NIHR_HIC_ICU_0073 m="2015-02-26">nhs_1</d:NIHR_HIC_ICU_0073></d:Numerical_national>
+                <d:Numerical_local><d:NIHR_HIC_ICU_0001 m="2015-02-26">pas_1</d:NIHR_HIC_ICU_0001></d:Numerical_local>
+                <d:Hospital_discharge><d:Date><d:NIHR_HIC_ICU_0406 m="2015-02-26">2014-02-07</d:NIHR_HIC_ICU_0406></d:Date></d:Hospital_discharge>
+                <d:Heart_rate>
+                    <d:physiology-cardiovascular-heart-rate>
+                        <d:NIHR_HIC_ICU_0108 m="2015-02-26">103</d:NIHR_HIC_ICU_0108>
+                        <d:NIHR_HIC_ICU_0254 m="2015-02-26">2014-02-01T10:00:00</d:NIHR_HIC_ICU_0254>
+                    </d:physiology-cardiovascular-heart-rate>
+                    <d:physiology-cardiovascular-heart-rate>
+                        <d:NIHR_HIC_ICU_0108 m="2015-02-26">93</d:NIHR_HIC_ICU_0108>
+                        <d:NIHR_HIC_ICU_0254 m="2015-02-26">2014-02-01T11:00:00</d:NIHR_HIC_ICU_0254>
+                    </d:physiology-cardiovascular-heart-rate>
+                    <d:physiology-cardiovascular-heart-rate>
+                        <d:NIHR_HIC_ICU_0108 m="2015-02-26">89</d:NIHR_HIC_ICU_0108>
+                        <d:NIHR_HIC_ICU_0254 m="2015-02-26">2014-02-01T12:00:00</d:NIHR_HIC_ICU_0254>
+                    </d:physiology-cardiovascular-heart-rate>
+                </d:Heart_rate>
+            </d:subject>
+        </d:data>
+    </d:context>
+</d:document>

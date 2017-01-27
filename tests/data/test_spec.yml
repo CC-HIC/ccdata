@@ -1,0 +1,66 @@
+NIHR_HIC_ICU_0398:
+  shortName: adm_type
+  dataItem: Admission type
+  distribution: nominal
+  category:
+      levels:
+          L: unplanned Local admission
+          U: Unplanned transfer in
+          P: Planned transfer in
+          S: planned local Surgical admission
+          M: planned local Medical admission
+          R: Repatriation
+      apply: drop_entry
+  nodata:
+      apply: drop_episode
+
+NIHR_HIC_ICU_0108:
+  shortName: hrate
+  dataItem: Heart rate
+  distribution: normal
+  decimal_places: 0
+  range:
+      labels:
+          red: (100, 300)
+          amber: (0, 170) 
+          green: (50, 100)
+      apply: drop_entry
+  missingness:
+      labels:
+          yellow: 24
+      accept_2d:
+        yellow: 50 
+      impute_2d:
+          lead: 3
+          lag: 3
+          fun: median
+      apply: drop_episode
+  nodata:
+      apply: drop_episode
+
+NIHR_HIC_ICU_0113:
+  shortName: bp_sys_ni
+  dataItem: Systolic Arterial blood pressure - NBPSystolic Arterial blood pressure
+  distribution: normal
+  decimal_places: 0
+  range:
+      labels:
+          red: (0, 300)
+          amber: (30, 250)
+      apply: drop_entry
+  missingness:
+      labels:
+          yellow: 24
+      accept_2d:
+          yellow: 50 
+      impute_2d:
+          lead: 3
+          lag: 3
+          fun: median
+      apply: drop_episode
+  nodata:
+    apply: drop_episode
+
+NIHR_HIC_ICU_0093:
+  shortName: nhs_number
+  dataItem: NHS number

@@ -1,0 +1,15 @@
+NIHR_HIC_ICU_0108:
+  shortName: test_val
+  dataItem: Heart rate
+  distribution: normal
+  decimal_places: 0
+  missingness:
+      labels:
+          yellow: 1
+      accept_2d:
+          yellow: 70 
+      impute_2d:
+          lead: 3
+          lag: 3
+          fun: median
+      apply: drop_episode

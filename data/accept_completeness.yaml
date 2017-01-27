@@ -1,0 +1,263 @@
+ICNNO: 99 # Site code (ICNARC CMP number)
+bed02: 0 # CCU bed configuration 02
+bed03: 0 # CCU bed configuration 03
+bed05: 0 # CCU bed configuration 05
+bed50: 0 # CCU bed configuration 90
+NHSNO: 99 # NHS number
+pasno: 99 # PAS number
+ADNO: 99 # Critical care local identifier / ICNARC admission number
+DOB: 99 # Date of birth
+PCODE: 90 # Postcode
+GPCODE: 90 # Code of GP
+ETHNIC: 90 # Ethnicity
+SEX: 99 # Sex
+HCM: 90 # Height
+HCMEST: 90 # Height (Source)
+WKG: 90 # Weight
+WKGEST: 90 # Weight (Source)
+DAH: 90 # Date of admission to your hospital
+DAICU: 0 # Date & Time of admission to your unit
+DWFRD: 0 # Date fully ready for discharge
+TWFRD: 0 # Time fully ready for discharge
+DDICU: 0 # Date & Time of discharge from your unit
+DUDICU: 0 # Date of ultimate discharge from ICU/HDU
+DDH: 0 # Date of discharge from your hospital
+DUDH: 0 # Date of ultimate discharge from your hospital
+UDIS: 0 # Status at ultimate discharge from ICUHDU
+RESA: 0 # Residence prior to admission to acute hospital
+HLOCA: 0 # Hospital housing location (in)
+LOCA: 0 # Location (in)
+PA_V3: 0 # Admission type
+SCODE: 0 # Treatment function code
+CLASSNS: 0 # classification of surgery
+CCL2D: 0 # Level 2 (HDU) days
+CCL3D: 0 # Level 3 (ICU) days
+RDIS_V3: 0 # Discharge status (Reason for discharge from your unit)
+LOCD: 0 # Discharge location (location out)
+TNESSD: 0 # Timeliness of discharge from your unit
+LEVD: 0 # Level of care at discharge from your unit
+DIS: 0 # Dead or alive on discharge
+DOAH: 0 # Date of original admission to/attendance at acute hospital
+SOHA: 0 # Sector of other hospital (in)
+PLOCA: 0 # Prior location (in)
+TUADNO: 0 # Transferring unit admission number
+DOAICU: 0 # Date of original admission to ICU/HDU
+TUIDI: 0 # Transferring unit identifier (in)
+TYPEIHA: 0 # Type of adult ICU/HDU (in)
+TGA: 0 # Adult ICU/HDU within your critical care transfer group (in)
+CCA: 0 # Critical care visit prior to this admission to your unit
+DLCCA: 0 # Date of last critical care visit prior to this admission to your unit
+HLOCD: 0 # Hospital housing location (out)
+SOHD: 0 # Sector of other hospital (out)
+TYPEIHD: 0 # Type of adult ICU/HDU (out)
+TGD: 0 # Adult ICU/HDU within your critical care transfer group (out)
+HDIS: 0 # Status at discharge from your hospital
+CCD: 0 # Critical care visit post-discharge from your unit
+DFCCD: 0 # Date of first critical care post-discharge from your unit
+DESTH_V3: 0 # Destination post discharge within your hospital
+RESD: 0 # Residence post discharge from acute hospital
+UHDIS: 0 # Status at ultimate discharge from hospital
+PSP: 0 # Admission for pre-surgical preparation
+CPR_V3: 0 # Cardiopulmonary resuscitation within 24 hours prior to admission to unit
+RAICU1: 90 # Primary reason for admission to your unit
+RAICU2: 0 # Secondary reasons for admission to your unit
+URAICU: 0 # Ultimate primary reason for admission to unit
+CHEMOX: 0 # Chemotherapy (within the last 6months) steroids alone excluded
+RADIOX: 0 # Radiotherapy
+CICIDS: 0 # Congenital immunohumoral or cellular immune deficiency state
+AMLALLMM: 0 # Acute myeloid/lymphocytic leukaemia or myeloma
+CMLCLL: 0 # Chronic myelogenous /lymphocytic leukaemia
+LYM: 0 # Lymphoma
+META: 0 # Metastatic disease
+CRRX: 0 # Chronic renal replacement therapy
+BPC: 0 # Biopsy proven cirrhosis
+HE: 0 # Heaptic encephalopathy
+PH: 0 # Portal hypertension
+AIDS_V3: 0 # HIV/AIDS
+HV: 0 # Home ventilation
+SRD: 0 # Severe respiratory disease
+STERX: 0 # Steroid treatment
+VSCD: 0 # Very severe cardiovascular disease
+OCPMH: 0 # Other condition in past medical history
+DEP: 0 # Dependency prior to admission
+apache_score: 90 # APACHE II Score
+apache_prob: 90 # APACHE II Probability
+TNESSA: 0 # Delayed admission
+DHRS: 0 # Delay
+AMUAI: 0 # Antimicrobial use after 48 hours in your unit
+ORGAN_SUPPORT: 0 # Organ support maximum
+ARSD: 0 # Advanced respiratory support days
+BRSD: 0 # Basic respiratory support days
+ACSD: 0 # Advanced Cardiovascular support days
+BCSD: 0 # Basic Cardiovascular support days
+RSD: 0 # Renal support days
+NSD: 0 # Neurological support days
+LSD: 0 # Liver support days
+DSD: 0 # Dermatological support days
+GSD: 0 # Gastrointestinal support days
+ITW_V3: 0 # Treatment withheld/withdrawn
+DTW: 0 # Date treatment first withdrawn
+TTW: 0 # Time treatment first withdrawn
+BSDTP: 0 # Brain stem death declared
+DDBSD: 0 # Date of declaration of brain stem death
+TDBSD: 0 # Time of declaration of brain stem death
+DOD: 0 # Date of death on yout unit
+TOD: 0 # Time of death on your unit
+REFOD: 0 # Referred for solid organ or tissue donation
+OD_V3: 0 # Solid organ or tissue donor
+DBRICU: 0 # Date body removed from your unit
+TBRICU: 0 # Time body removed from your unit
+advsupt_resp: 0 # Advanced respiratory support
+basicsupt_resp: 0 # Basic respiratory support
+advsupt_cardv: 0 # Advanced Cardiovascular support
+basicsupt_cardv: 0 # Basic Cardiovascular support
+supt_renal: 0 # Renal support
+supt_neuro: 0 # Neurological support
+supt_liver: 0 # Liver support
+supt_dermat: 0 # Dermatological support
+supt_gastr: 0 # Gastrointestinal support
+gcs_total: 0 # GCS - total
+gcs_motor: 0 # GCS - motor component
+gcs_eye: 0 # GCS - eye component
+gcs_verbal: 0 # GCS - verbal component
+sedation_score: 0 # Sedation score (hourly)
+sedataion: 0 # Sedation yes/no
+h_rate: 0 # Heart rate
+h_rhythm: 0 # Heart rhythm
+bp_m_a: 0 # Mean arterial blood pressure - Art BPMean arterial blood pressure
+bp_m_ni: 0 # Mean arterial blood pressure - NBPMean arterial blood pressure
+bp_sys_a: 0 # Systolic Arterial blood pressure - Art BPSystolic Arterial blood pressure
+bp_sys_ni: 0 # Systolic Arterial blood pressure - NBPSystolic Arterial blood pressure
+bp_dia_a: 0 # Diastolic arterial blood pressure - Art BPDiastolic arterial blood pressure
+bp_dia_ni: 0 # Diastolic arterial blood pressure - NBPDiastolic arterial blood pressure
+venous_p: 0 # Central venous pressure
+lidco_plus: 0 # Cardiac output - LiDCO Plus
+lidco_rapid: 0 # Cardiac output - LiDCO Rapid
+picco: 0 # Cardiac output - PICCO
+pa_catheter: 0 # Cardiac output - PA Catheter
+doppler: 0 # Cardiac output - Doppler
+airway: 0 # Airway
+ventilation: 0 # Invasive or non-invasive (ventilation)
+respiratory_rate_spon: 0 # Spontaneous Respiratory Rate
+respiratory_rate_totl: 0 # Total respiratory rate (monitor)
+spo2: 0 # SpO2
+pao2_fio2: 0 # PaO2/FiO2 ratio
+fraction_oxygen: 0 # Inspired fraction of oxygen
+pe_expiratory_pressure: 0 # Positive End Expiratory Pressure
+mand_resp_rate: 0 # Mandatory Respiratory Rate
+total_resp_rate: 0 # Total respiratory rate (ventilator)
+minute_volume: 0 # Minute volume
+tidal_volume: 0 # Tidal volume
+airway_pressure_peak: 0 # Peak airway pressure
+frequency: 0 # Frequency (Hz)
+cycle_volumn: 0 # Cycle Volume
+base_flow: 0 # Base flow
+airway_pressure: 0 # Airway pressure
+fluid_balance_d: 0 # Fluid Balance (daily)
+fluid_balance_h: 0 # Fluid Balance (hourly)
+urine_output: 0 # Urine output
+renal_replace: 0 # Renal replacement mode
+duration_therapy: 0 # Duration of therapy (hours per day)
+effluent_per_day: 0 # Total effluent per day
+dialysate: 0 # Dialysate
+replace_fluid_RRT: 0 # Replacement fluid during RRT
+anticoagulation: 0 # Type of anticoagulation
+position: 0 # Position
+temperature_central: 0 # Temperature - Central
+temperature_non_central: 0 # Temperature - Non-central
+sodium: 0 # Sodium
+sodium_abg_vbg: 0 # Sodium ABG/VBG
+potassium: 0 # Potassium
+potassium_abg_vbg: 0 # Potassium ABG/VBG
+urea: 0 # Urea
+creatinine: 0 # Creatinine
+bilirubin: 0 # Bilirubin
+glucose_lab: 0 # Glucose (laboratory)
+glucode_abg_vbg: 0 # Glucose ABG/VBG
+glucode_bedtest: 0 # Glucose bedside test
+cprotein: 0 # C reactive protein
+ph_abg_vbg: 0 # pH - ABG / VBG
+hco3_abg_vbg: 0 # HCO3 - ABG / VBG
+lactate_abg: 0 # Lactate - ABG
+lactate_lab: 0 # Lactate - Lab
+haemoglobin: 0 # Haemoglobin
+haemoglobin_abg_vbg: 0 # Haemoglobin ABG/VBG
+white_cell: 0 # White cell count
+neutrophil: 0 # Neutrophil count
+platelets: 0 # Platelets
+site: 0 # Site
+organism: 0 # Organism
+sensitivity: 0 # Sensitivity
+pao2_abg: 0 # PaO2 - ABG
+sao2_abg: 0 # SaO2 - ABG
+venous_saturation: 0 # Central venous saturation
+paco2_abg: 0 # PaCO2 - ABG
+amikacin: 0 # Amikacin
+gentamicin: 0 # Gentamicin
+neomycin: 0 # Neomycin
+tobramycin: 0 # Tobramycin
+pentamidine: 0 # Pentamidine
+ethambutal hcl: 0 # Ethambutal HCL
+isoniazid: 0 # Isoniazid
+pyrazinamide: 0 # Pyrazinamide
+rifampacin: 0 # Rifampacin
+rifater: 0 # Rifater
+rifinah: 0 # Rifinah
+ertapenem: 0 # Ertapenem
+meropenem: 0 # Meropenem
+cefotaxime: 0 # Cefotaxime
+ceftazidime: 0 # Ceftazidime
+ceftriaxone: 0 # Ceftriaxone
+cefuroxime: 0 # Cefuroxime
+chloramphenicol: 0 # Chloramphenicol
+fuscidic acid: 0 # Fuscidic acid
+sodium fusidate: 0 # Sodium Fusidate
+teicoplanin: 0 # Teicoplanin
+vancomycin: 0 # Vancomycin
+clindamycin: 0 # Clindamycin
+azithromycin: 0 # Azithromycin
+clarithromycin: 0 # Clarithromycin
+erythromycin: 0 # Erythromycin
+nitrofurantion: 0 # Nitrofurantion
+metronidazole: 0 # Metronidazole
+linezolid: 0 # Linezolid
+amoxicillin: 0 # Amoxicillin
+benzylpenicillin: 0 # Benzylpenicillin
+co-amoxiclav: 0 # Co-Amoxiclav
+flucloxacillin: 0 # Flucloxacillin
+phenoxymethylpenicillin: 0 # Phenoxymethylpenicillin
+piperacillin_tazobactam: 0 # Piperacillin/Tazobactam
+colistin: 0 # Colistin
+ciprofloxacin: 0 # Ciprofloxacin
+levofloxacin: 0 # Levofloxacin
+moxifloxacin: 0 # Moxifloxacin
+ofloxacin: 0 # Ofloxacin
+co-trimoxazole: 0 # Co-Trimoxazole
+trimethoprim: 0 # Trimethoprim
+demeclocycline hcl: 0 # Demeclocycline HCL
+doxycycline: 0 # Doxycycline
+tigecycline: 0 # Tigecycline
+propofol: 0 # Propofol
+thiopentone_thiopental: 0 # Thiopentone / Thiopental
+midazolam: 0 # Midazolam
+clonidine: 0 # Clonidine
+dexmedetomidine: 0 # Dexmedetomidine
+ketamine: 0 # Ketamine
+fentanyl: 0 # Fentanyl
+morphine: 0 # Morphine
+remifentanil: 0 # Remifentanil
+levosimendan: 0 # Levosimendan
+adrenaline: 0 # Adrenaline
+dobutamine: 0 # Dobutamine
+dopamine: 0 # Dopamine
+dopexamine: 0 # Dopexamine
+enoximone: 0 # Enoximone
+milrinone: 0 # Milrinone
+noradrenaline: 0 # Noradrenaline
+vasopressin: 0 # Vasopressin
+terlipressin: 0 # Terlipressin
+esmolol: 0 # Esmolol
+metoprolol: 0 # Metoprolol
+dexamethasone: 0 # Dexamethasone
+hydrocortisone: 0 # Hydrocortisone
+methylprednisolone: 0 # Methylprednisolone

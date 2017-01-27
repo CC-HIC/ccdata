@@ -1,0 +1,5853 @@
+NIHR_HIC_ICU_0002:
+  shortName: ICNNO
+  ItemId: 1
+  Classification1: Demographic
+  Classification2: Unit
+  Classification3: Identifier
+  Classification4: ~
+  dataItem: Site code (ICNARC CMP number)
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: XXXX
+  Reference_ranges: ~
+  UCHsource: ~
+  Timing: once on joining project
+  ICNARC_Fieldname: ICNNO
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0002
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0006:
+  shortName: bed02
+  ItemId: 2
+  Classification1: Demographic
+  Classification2: Unit
+  Classification3: CCU_bed_configuration
+  Classification4: ~
+  dataItem: CCU bed configuration 02
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ~
+  Timing: once on joining project
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0006
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0395:
+  shortName: bed03
+  ItemId: 3
+  Classification1: Demographic
+  Classification2: Unit
+  Classification3: CCU_bed_configuration
+  Classification4: ~
+  dataItem: CCU bed configuration 03
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ~
+  Timing: once on joining project
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0395
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0396:
+  shortName: bed05
+  ItemId: 4
+  Classification1: Demographic
+  Classification2: Unit
+  Classification3: CCU_bed_configuration
+  Classification4: ~
+  dataItem: CCU bed configuration 05
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ~
+  Timing: once on joining project
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0396
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0397:
+  shortName: bed50
+  ItemId: 5
+  Classification1: Demographic
+  Classification2: Unit
+  Classification3: CCU_bed_configuration
+  Classification4: ~
+  dataItem: CCU bed configuration 90
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ~
+  Timing: once on joining project
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0397
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0073:
+  shortName: NHSNO
+  ItemId: 6
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Identifier
+  Classification4: Numerical_national
+  dataItem: NHS number
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 999 999 9999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: NHSNO
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0073
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0001:
+  shortName: pasno
+  ItemId: 7
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Identifier
+  Classification4: Numerical_local
+  dataItem: PAS number
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: XXXXXXXX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0001
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0005:
+  shortName: ADNO
+  ItemId: 8
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Identifier
+  Classification4: Episode
+  dataItem: Critical care local identifier / ICNARC admission number
+  dateandtime: no
+  Units: ~
+  Datatype: numeric
+  Template: 99999999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: ADNO
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0005
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0033:
+  shortName: DOB
+  ItemId: 9
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Identifier
+  Classification4: Birth_date
+  dataItem: Date of birth
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DOB
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0033
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0076:
+  shortName: PCODE
+  ItemId: 10
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Location
+  Classification4: Address
+  dataItem: Postcode
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: XXXX XXX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: PCODE
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0076
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0003:
+  shortName: GPCODE
+  ItemId: 11
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Location
+  Classification4: GP
+  dataItem: Code of GP
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: GPCODE
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0003
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0058:
+  shortName: ETHNIC
+  ItemId: 12
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Descriptor
+  Classification4: Ethnicity
+  dataItem: Ethnicity
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: ETHNIC
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0058
+  NHICdtCode: ~
+  NHICmetaCode: ~
+  category:
+    levels:
+      "A": white British
+      "B": white Irish
+      "C": white any other
+      "D": mixed white and black Caribbean
+      "E": mixed white and black African
+      "F": mixed white and Asian
+      "G": mixed any other
+      "H": Asian or Asian British - Indian
+      "J": Asian or Asian British - Pakistani
+      "K": Asian or Asian British - Bangladeshi
+      "L": Asian or Asian British - any other
+      "M": black or black British - Caribbean
+      "N": black or black British - African
+      "P": black or black British - any other
+      "R": other ethnic group - Chinese
+      "S": any other ethnic group
+      "Z": not stated
+
+NIHR_HIC_ICU_0093:
+  shortName: SEX
+  ItemId: 13
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Descriptor
+  Classification4: Sex
+  dataItem: Sex
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: SEX
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0093
+  NHICdtCode: ~
+  NHICmetaCode: ~
+  category:
+    levels:
+      "M": Male
+      "F": Female
+
+NIHR_HIC_ICU_0017:
+  shortName: HCM
+  ItemId: 14
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Descriptor
+  Classification4: Height
+  dataItem: Height
+  dateandtime: no
+  Units: cm
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: HCM
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0017
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0018:
+  shortName: HCMEST
+  ItemId: 15
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Descriptor
+  Classification4: Height
+  dataItem: Height (Source)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: HCMEST
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0018
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0019:
+  shortName: WKG
+  ItemId: 16
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Descriptor
+  Classification4: Weight
+  dataItem: Weight
+  dateandtime: no
+  Units: kg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: WKG
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0019
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0020:
+  shortName: WKGEST
+  ItemId: 17
+  Classification1: Demographic
+  Classification2: Patient
+  Classification3: Descriptor
+  Classification4: Weight
+  dataItem: Weight (Source)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: WKGEST
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0020
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0032:
+  shortName: DAH
+  ItemId: 18
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: Hospital_admission
+  Classification4: Date
+  dataItem: Date of admission to your hospital
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DAH
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0032
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0411:
+  shortName: DAICU
+  ItemId: 19
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: ICU_admission
+  Classification4: Date_Time
+  dataItem: Date & Time of admission to your unit
+  dateandtime: no
+  Units: ~
+  Datatype: date/time
+  Template: yyyy-mm-dd hh:mm
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: within 30 min of input
+  ICNARC_Fieldname: DAICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0411
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0050:
+  shortName: DWFRD
+  ItemId: 20
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: ICU_discharge
+  Classification4: Readiness
+  dataItem: Date fully ready for discharge
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: DWFRD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0050
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0051:
+  shortName: TWFRD
+  ItemId: 21
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: ICU_discharge
+  Classification4: Readiness
+  dataItem: Time fully ready for discharge
+  dateandtime: no
+  Units: ~
+  Datatype: time
+  Template: hh:mm
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TWFRD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0051
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0412:
+  shortName: DDICU
+  ItemId: 22
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: ICU_discharge
+  Classification4: Date_Time
+  dataItem: Date & Time of discharge from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: date/time
+  Template: yyyy-mm-dd hh:mm
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: within 30 min of input
+  ICNARC_Fieldname: DDICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0412
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0037:
+  shortName: DUDICU
+  ItemId: 23
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: ICU_discharge
+  Classification4: Ultimate_discharge
+  dataItem: Date of ultimate discharge from ICU/HDU
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: DUDICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0037
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0406:
+  shortName: DDH
+  ItemId: 24
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: Hospital_discharge
+  Classification4: Date
+  dataItem: Date of discharge from your hospital
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: DDH
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0406
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0408:
+  shortName: DUDH
+  ItemId: 25
+  Classification1: Demographic
+  Classification2: Dates
+  Classification3: Hospital_discharge
+  Classification4: Ultimate_discharge
+  dataItem: Date of ultimate discharge from your hospital
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: DUDH
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0408
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0930:
+  shortName: UDIS
+  ItemId: 271
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_discharge
+  Classification4: Status_at_ultimate_discharge_from_your_ICUHDU
+  dataItem: Status at ultimate discharge from ICUHDU
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: UDIS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0930
+  NHICdtCode: ~
+  NHICmetaCode: ~
+  category:
+    levels:
+      A: Alive
+      D: Dead
+      E: Alive - not discharged
+
+NIHR_HIC_ICU_0085:
+  shortName: RESA
+  ItemId: 34
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: Hospital_admission
+  Classification4: Location
+  dataItem: Residence prior to admission to acute hospital
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: RESA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0085
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0065:
+  shortName: HLOCA
+  ItemId: 35
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_admission
+  Classification4: Location
+  dataItem: Hospital housing location (in)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: HLOCA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0065
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0068:
+  shortName: LOCA
+  ItemId: 36
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_admission
+  Classification4: Inbound
+  dataItem: Location (in)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: LOCA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0068
+  NHICdtCode: ~
+  NHICmetaCode: ~
+  category:
+    levels:
+      "W": Ward
+      "B": oBstetric area
+      "M": other interMediate care area
+      "P": Paediatric/neonatal ICU/HCU
+      "I": level 3 bed in adult ICU or ICU/HDU
+      "H": level 2 bed in adult ICU or ICU/HDU
+      "U": adUlt HCU
+      "T": Theatre & recovery
+      "E": accident & Emergency
+      "R": Recovery only
+      "G": imaGing department
+      "S": Specialist treatment area
+      "C": Clinic
+      "N": Not in hospital
+
+NIHR_HIC_ICU_0398:
+  shortName: PA_V3
+  ItemId: 37
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_admission
+  Classification4: Type
+  dataItem: Admission type
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: PA_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0398
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0004:
+  shortName: SCODE
+  ItemId: 38
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_admission
+  Classification4: Specialty
+  dataItem: Treatment function code
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: XXX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: SCODE
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0004
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0027:
+  shortName: CLASSNS
+  ItemId: 39
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_admission
+  Classification4: Surgical_priority
+  dataItem: classification of surgery
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CLASSNS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0027
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0007:
+  shortName: CCL2D
+  ItemId: 40
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: Acuity
+  Classification4: ~
+  dataItem: Level 2 (HDU) days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: CCL2D
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0007
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0008:
+  shortName: CCL3D
+  ItemId: 41
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: Acuity
+  Classification4: ~
+  dataItem: Level 3 (ICU) days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: CCL3D
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0008
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0081:
+  shortName: RDIS_V3
+  ItemId: 42
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_discharge
+  Classification4: Status
+  dataItem: Discharge status (Reason for discharge from your unit)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: RDIS_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0081
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0069:
+  shortName: LOCD
+  ItemId: 43
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_discharge
+  Classification4: Outbound
+  dataItem: Discharge location (location out)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: LOCD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0069
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0405:
+  shortName: TNESSD
+  ItemId: 44
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: ICU_discharge
+  Classification4: Timeliness
+  dataItem: Timeliness of discharge from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TNESSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0405
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0066:
+  shortName: LEVD
+  ItemId: 45
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: Level_of_care_at_discharge
+  Classification4: ~
+  dataItem: Level of care at discharge from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: LEVD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0066
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0097:
+  shortName: DIS
+  ItemId: 46
+  Classification1: Demographic
+  Classification2: Episode_descriptors
+  Classification3: Status_at_discharge_from_your_ICUHDU
+  Classification4: ~
+  dataItem: Dead or alive on discharge
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: DIS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0097
+  NHICdtCode: ~
+  NHICmetaCode: ~
+  category:
+    levels:
+      A: Alive
+      D: Dead
+      E: Alive - not discharged
+
+NIHR_HIC_ICU_0035:
+  shortName: DOAH
+  ItemId: 47
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Date
+  Classification4: Date_of_original_admission
+  dataItem: Date of original admission to/attendance at acute hospital
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DOAH
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0035
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0089:
+  shortName: SOHA
+  ItemId: 48
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Hospital
+  dataItem: Sector of other hospital (in)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: SOHA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0089
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0077:
+  shortName: PLOCA
+  ItemId: 49
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Hospital
+  dataItem: Prior location (in)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: PLOCA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0077
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0100:
+  shortName: TUADNO
+  ItemId: 50
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Patient_episode_identifier
+  dataItem: Transferring unit admission number
+  dateandtime: no
+  Units: ~
+  Datatype: numeric
+  Template: 99999999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: TUADNO
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0100
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0036:
+  shortName: DOAICU
+  ItemId: 51
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Patient_episode_identifier
+  dataItem: Date of original admission to ICU/HDU
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DOAICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0036
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0101:
+  shortName: TUIDI
+  ItemId: 52
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Unit_identifier
+  dataItem: Transferring unit identifier (in)
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: XXXX
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: TUIDI
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0101
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0104:
+  shortName: TYPEIHA
+  ItemId: 53
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Unit_identifier
+  dataItem: Type of adult ICU/HDU (in)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: TYPEIHA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0104
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0013:
+  shortName: TGA
+  ItemId: 54
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Transferring_in
+  Classification4: Unit_identifier
+  dataItem: Adult ICU/HDU within your critical care transfer group (in)
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: TGA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0013
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0031:
+  shortName: CCA
+  ItemId: 55
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Critical_care_visit
+  Classification4: Outreach
+  dataItem: Critical care visit prior to this admission to your unit
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CCA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0031
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0034:
+  shortName: DLCCA
+  ItemId: 56
+  Classification1: Demographic
+  Classification2: Pre_episode_descriptors
+  Classification3: Critical_care_visit
+  Classification4: Date_of_last_visit_prior_to_admission
+  dataItem: Date of last critical care visit prior to this admission to your unit
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DLCCA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0034
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0057:
+  shortName: HLOCD
+  ItemId: 57
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Transferring_out
+  Classification4: Hospital
+  dataItem: Hospital housing location (out)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: HLOCD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0057
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0090:
+  shortName: SOHD
+  ItemId: 58
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Transferring_out
+  Classification4: Hospital
+  dataItem: Sector of other hospital (out)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: SOHD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0090
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0568:
+  shortName: TYPEIHD
+  ItemId: 59
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Transferring_out
+  Classification4: Unit
+  dataItem: Type of adult ICU/HDU (out)
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: TYPEIHD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0568
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0014:
+  shortName: TGD
+  ItemId: 60
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Transferring_out
+  Classification4: Unit
+  dataItem: Adult ICU/HDU within your critical care transfer group (out)
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: TGD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0014
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0095:
+  shortName: HDIS
+  ItemId: 61
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Status_at_discharge_from_your_hospital
+  Classification4: ~
+  dataItem: Status at discharge from your hospital
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: HDIS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0095
+  NHICdtCode: ~
+  NHICmetaCode: ~
+  category:
+    levels:
+      A: Alive
+      D: Dead
+      E: Alive - not discharged
+
+NIHR_HIC_ICU_0030:
+  shortName: CCD
+  ItemId: 62
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Critical_care_visit
+  Classification4: Outreach
+  dataItem: Critical care visit post-discharge from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: CCD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0030
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0407:
+  shortName: DFCCD
+  ItemId: 63
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Critical_care_visit
+  Classification4: Date_of_first_visit_post_discharge
+  dataItem: Date of first critical care post-discharge from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: DFCCD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0407
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0573:
+  shortName: DESTH_V3
+  ItemId: 64
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Discharge_destination
+  Classification4: Destination_post_discharge_within_your_hospital
+  dataItem: Destination post discharge within your hospital
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: DESTH_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0573
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0084:
+  shortName: RESD
+  ItemId: 65
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Discharge_destination
+  Classification4: Residence_post_discharge_from_acute_hospital
+  dataItem: Residence post discharge from acute hospital
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: RESD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0084
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0098:
+  shortName: UHDIS
+  ItemId: 66
+  Classification1: Demographic
+  Classification2: Post_episode_descriptors
+  Classification3: Status_at_ultimate_discharge_from_hospital
+  Classification4: ~
+  dataItem: Status at ultimate discharge from hospital
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: when available after discharge
+  ICNARC_Fieldname: UHDIS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0098
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0011:
+  shortName: PSP
+  ItemId: 67
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Reason_for_admission
+  Classification4: Admission_for_pre_surgical_preparation
+  dataItem: Admission for pre-surgical preparation
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: PSP
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0011
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0021:
+  shortName: CPR_V3
+  ItemId: 68
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Reason_for_admission
+  Classification4: CPR_within_24_hours_prior_to_admission
+  dataItem: Cardiopulmonary resuscitation within 24 hours prior to admission to unit
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CPR_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0021
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0399:
+  shortName: RAICU1
+  ItemId: 69
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Reason_for_admission
+  Classification4: Primary_reason_for_admission
+  dataItem: Primary reason for admission to your unit
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99.99.99.99
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: RAICU1
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0399
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0088:
+  shortName: RAICU2
+  ItemId: 70
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Reason_for_admission
+  Classification4: Secondary_reasons_for_admission
+  dataItem: Secondary reasons for admission to your unit
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99.99.99.99
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: RAICU2
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0088
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0912:
+  shortName: URAICU
+  ItemId: 71
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Reason_for_admission
+  Classification4: Ultimate_primary_reason_for_admission_to_unit
+  dataItem: Ultimate primary reason for admission to unit
+  dateandtime: no
+  Units: ~
+  Datatype: text
+  Template: 99.99.99.99
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: URAICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0912
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0024:
+  shortName: CHEMOX
+  ItemId: 72
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Chemotherapy (within the last 6months) steroids alone excluded
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CHEMOX
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0024
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0080:
+  shortName: RADIOX
+  ItemId: 73
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Radiotherapy
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: RADIOX
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0080
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0029:
+  shortName: CICIDS
+  ItemId: 74
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Congenital immunohumoral or cellular immune deficiency state
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CICIDS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0029
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0010:
+  shortName: AMLALLMM
+  ItemId: 75
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Acute myeloid/lymphocytic leukaemia or myeloma
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: AMLALLMM
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0010
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0025:
+  shortName: CMLCLL
+  ItemId: 76
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Chronic myelogenous /lymphocytic leukaemia
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CMLCLL
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0025
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0070:
+  shortName: LYM
+  ItemId: 77
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Lymphoma
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: LYM
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0070
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0071:
+  shortName: META
+  ItemId: 78
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Metastatic disease
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: META
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0071
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0026:
+  shortName: CRRX
+  ItemId: 79
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Chronic renal replacement therapy
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: CRRX
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0026
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0016:
+  shortName: BPC
+  ItemId: 80
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Biopsy proven cirrhosis
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: BPC
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0016
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0060:
+  shortName: HE
+  ItemId: 81
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Heaptic encephalopathy
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: HE
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0060
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0075:
+  shortName: PH
+  ItemId: 82
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Portal hypertension
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: PH
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0075
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0062:
+  shortName: AIDS_V3
+  ItemId: 83
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: HIV/AIDS
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: AIDS_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0062
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0063:
+  shortName: HV
+  ItemId: 84
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Home ventilation
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: HV
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0063
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0092:
+  shortName: SRD
+  ItemId: 85
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Severe respiratory disease
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: SRD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0092
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0099:
+  shortName: STERX
+  ItemId: 86
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Steroid treatment
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: STERX
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0099
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0107:
+  shortName: VSCD
+  ItemId: 87
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Very severe cardiovascular disease
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: VSCD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0107
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0074:
+  shortName: OCPMH
+  ItemId: 88
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Other condition in past medical history
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: OCPMH
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0074
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0055:
+  shortName: DEP
+  ItemId: 89
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: Co_morbidities
+  dataItem: Dependency prior to admission
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DEP
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0055
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0409:
+  shortName: apache_score
+  ItemId: 90
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: APACHE_II_score
+  dataItem: APACHE II Score
+  dateandtime: no
+  Units: ~
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0409
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0410:
+  shortName: apache_prob
+  ItemId: 91
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: APACHE_II
+  Classification4: APACHE_II_probability
+  dataItem: APACHE II Probability
+  dateandtime: no
+  Units: percent
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: ~
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0410
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0053:
+  shortName: TNESSA
+  ItemId: 92
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Delayed_admission
+  Classification4: Delayed_admission
+  dataItem: Delayed admission
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: TNESSA
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0053
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0054:
+  shortName: DHRS
+  ItemId: 93
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Delayed_admission
+  Classification4: Delay
+  dataItem: Delay
+  dateandtime: no
+  Units: hours
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after admission
+  ICNARC_Fieldname: DHRS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0054
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0015:
+  shortName: AMUAI
+  ItemId: 94
+  Classification1: Demographic
+  Classification2: Prognostication_variables
+  Classification3: Antimicrobial_use
+  Classification4: ~
+  dataItem: Antimicrobial use after 48 hours in your unit
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: AMUAI
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0015
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0009:
+  shortName: ORGAN_SUPPORT
+  ItemId: 95
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: ~
+  dataItem: Organ support maximum
+  dateandtime: no
+  Units: ~
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TOTOS
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0009
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0087:
+  shortName: ARSD
+  ItemId: 96
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Advanced respiratory support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: ARSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0087
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0086:
+  shortName: BRSD
+  ItemId: 97
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Basic respiratory support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: BRSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0086
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0023:
+  shortName: ACSD
+  ItemId: 98
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Advanced Cardiovascular support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: ACSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0023
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0022:
+  shortName: BCSD
+  ItemId: 99
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Basic Cardiovascular support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: BCSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0022
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0083:
+  shortName: RSD
+  ItemId: 100
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Renal support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: RSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0083
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0072:
+  shortName: NSD
+  ItemId: 101
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Neurological support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: NSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0072
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0067:
+  shortName: LSD
+  ItemId: 102
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Liver support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: LSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0067
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0056:
+  shortName: DSD
+  ItemId: 103
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Dermatological support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: DSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0056
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0059:
+  shortName: GSD
+  ItemId: 104
+  Classification1: Demographic
+  Classification2: Organ_dysfunction
+  Classification3: Cumulative
+  Classification4: Individual
+  dataItem: Gastrointestinal support days
+  dateandtime: no
+  Units: days
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day
+  ICNARC_Fieldname: GSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0059
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0103:
+  shortName: ITW_V3
+  ItemId: 105
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Limitation_of_therapy
+  Classification4: Treatment_withheldwithdrawn
+  dataItem: Treatment withheld/withdrawn
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: ITW_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0103
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0048:
+  shortName: DTW
+  ItemId: 106
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Limitation_of_therapy
+  Classification4: Date_treatment_first_withdrawn
+  dataItem: Date treatment first withdrawn
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: DTW
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0048
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0049:
+  shortName: TTW
+  ItemId: 107
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Limitation_of_therapy
+  Classification4: Time_treatment_first_withdrawn
+  dataItem: Time treatment first withdrawn
+  dateandtime: no
+  Units: ~
+  Datatype: time
+  Template: hh:mm
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TTW
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0049
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0400:
+  shortName: BSDTP
+  ItemId: 108
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Death
+  Classification4: Brain_stem_death
+  dataItem: Brain stem death declared
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: BSDTP
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0400
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0044:
+  shortName: DDBSD
+  ItemId: 109
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Death
+  Classification4: Brain_stem_death
+  dataItem: Date of declaration of brain stem death
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: DDBSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0044
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0045:
+  shortName: TDBSD
+  ItemId: 110
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Death
+  Classification4: Brain_stem_death
+  dataItem: Time of declaration of brain stem death
+  dateandtime: no
+  Units: ~
+  Datatype: time
+  Template: hh:mm
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TDBSD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0045
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0042:
+  shortName: DOD
+  ItemId: 111
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Death
+  Classification4: Date_of_death
+  dataItem: Date of death on yout unit
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: DOD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0042
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0043:
+  shortName: TOD
+  ItemId: 112
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Death
+  Classification4: Time_of_death
+  dataItem: Time of death on your unit
+  dateandtime: no
+  Units: ~
+  Datatype: time
+  Template: hh:mm
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TOD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0043
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0082:
+  shortName: REFOD
+  ItemId: 113
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Organ_donation
+  Classification4: Refferral_made
+  dataItem: Referred for solid organ or tissue donation
+  dateandtime: no
+  Units: ~
+  Datatype: list / logical
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: REFOD
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0082
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0094:
+  shortName: OD_V3
+  ItemId: 114
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Organ_donation
+  Classification4: Solid_organ_or_tissue_donor
+  dataItem: Solid organ or tissue donor
+  dateandtime: no
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: OD_V3
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0094
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0038:
+  shortName: DBRICU
+  ItemId: 115
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Body_removal
+  Classification4: Date_body_removed
+  dataItem: Date body removed from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: date
+  Template: yyyy-mm-dd
+  Reference_ranges: ~
+  UCHsource: Medicus
+  Timing: next working day after discharge
+  ICNARC_Fieldname: DBRICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0038
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0039:
+  shortName: TBRICU
+  ItemId: 116
+  Classification1: Demographic
+  Classification2: End_of_life
+  Classification3: Body_removal
+  Classification4: Time_body_removed
+  dataItem: Time body removed from your unit
+  dateandtime: no
+  Units: ~
+  Datatype: time
+  Template: hh:mm
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day after discharge
+  ICNARC_Fieldname: TBRICU
+  label1UCH: s1
+  label2UCH: s2
+  ClinicalTag: ~
+  NHICcode: NIHR_HIC_ICU_0039
+  NHICdtCode: ~
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0931:
+  shortName: advsupt_resp
+  ItemId: 117
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Advanced respiratory support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: ARS
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-advanced-respiratory
+  NHICcode: NIHR_HIC_ICU_0931
+  NHICdtCode: NIHR_HIC_ICU_0940
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0932:
+  shortName: basicsupt_resp
+  ItemId: 118
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Basic respiratory support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: BRS
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-basic-respiratory
+  NHICcode: NIHR_HIC_ICU_0932
+  NHICdtCode: NIHR_HIC_ICU_0941
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0933:
+  shortName: advsupt_cardv
+  ItemId: 119
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Advanced Cardiovascular support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: ACS
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-advanced-cardiovascular
+  NHICcode: NIHR_HIC_ICU_0933
+  NHICdtCode: NIHR_HIC_ICU_0942
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0934:
+  shortName: basicsupt_cardv
+  ItemId: 120
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Basic Cardiovascular support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: BCS
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-basic-cardiovascular
+  NHICcode: NIHR_HIC_ICU_0934
+  NHICdtCode: NIHR_HIC_ICU_0943
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0935:
+  shortName: supt_renal
+  ItemId: 121
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Renal support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: Renal
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-renal-support
+  NHICcode: NIHR_HIC_ICU_0935
+  NHICdtCode: NIHR_HIC_ICU_0944
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0936:
+  shortName: supt_neuro
+  ItemId: 122
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Neurological support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: Neuro
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-neurological-support
+  NHICcode: NIHR_HIC_ICU_0936
+  NHICdtCode: NIHR_HIC_ICU_0945
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0937:
+  shortName: supt_liver
+  ItemId: 123
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Liver support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: Liver
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-live-support
+  NHICcode: NIHR_HIC_ICU_0937
+  NHICdtCode: NIHR_HIC_ICU_0946
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0938:
+  shortName: supt_dermat
+  ItemId: 124
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Dermatological support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: Derm
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-dermatological-support
+  NHICcode: NIHR_HIC_ICU_0938
+  NHICdtCode: NIHR_HIC_ICU_0947
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0939:
+  shortName: supt_gastr
+  ItemId: 125
+  Classification1: Physiology
+  Classification2: Organ_dysfunction
+  Classification3: Daily
+  Classification4: ~
+  dataItem: Gastrointestinal support
+  dateandtime: no
+  Units: 1 or 0
+  Datatype: Logical
+  Template: 1
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: next working day
+  ICNARC_Fieldname: ~
+  label1UCH: GI
+  label2UCH: CCMDS
+  ClinicalTag: physiology-organ-dysfunction-gastrointestinal-support
+  NHICcode: NIHR_HIC_ICU_0939
+  NHICdtCode: NIHR_HIC_ICU_0948
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0156:
+  shortName: gcs_total
+  ItemId: 126
+  Classification1: Physiology
+  Classification2: Neurology
+  Classification3: GCS
+  Classification4: gcs_total
+  dataItem: GCS - total
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: GCS
+  label2UCH: GCS Total
+  ClinicalTag: clinical-gcs-score-total
+  NHICcode: NIHR_HIC_ICU_0156
+  NHICdtCode: NIHR_HIC_ICU_0293
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0157:
+  shortName: gcs_motor
+  ItemId: 127
+  Classification1: Physiology
+  Classification2: Neurology
+  Classification3: GCS
+  Classification4: gcs_motor_component
+  dataItem: GCS - motor component
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: GCS
+  label2UCH: GCS Motor
+  ClinicalTag: clinical-gcs-score-motor
+  NHICcode: NIHR_HIC_ICU_0157
+  NHICdtCode: NIHR_HIC_ICU_0294
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0158:
+  shortName: gcs_eye
+  ItemId: 128
+  Classification1: Physiology
+  Classification2: Neurology
+  Classification3: GCS
+  Classification4: gcs_eye_component
+  dataItem: GCS - eye component
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: GCS
+  label2UCH: GCS Eyes
+  ClinicalTag: clinical-gcs-score-eye
+  NHICcode: NIHR_HIC_ICU_0158
+  NHICdtCode: NIHR_HIC_ICU_0295
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0159:
+  shortName: gcs_verbal
+  ItemId: 129
+  Classification1: Physiology
+  Classification2: Neurology
+  Classification3: GCS
+  Classification4: gcs_verbal_component
+  dataItem: GCS - verbal component
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: GCS
+  label2UCH: GCS Verbal
+  ClinicalTag: clinical-gcs-score-verbal
+  NHICcode: NIHR_HIC_ICU_0159
+  NHICdtCode: NIHR_HIC_ICU_0296
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0160:
+  shortName: sedation_score
+  ItemId: 130
+  Classification1: Physiology
+  Classification2: Neurology
+  Classification3: Sedation
+  Classification4: Richmond_Agitation_Sedation_Score_RASS
+  dataItem: Sedation score (hourly)
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: RASS
+  label2UCH: RASS
+  ClinicalTag: physiology-neurological-sedation-score-hourly
+  NHICcode: NIHR_HIC_ICU_0160
+  NHICdtCode: NIHR_HIC_ICU_0917
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0911:
+  shortName: sedataion
+  ItemId: 131
+  Classification1: Physiology
+  Classification2: Neurology
+  Classification3: Sedation
+  Classification4: Sedated
+  dataItem: Sedation yes/no
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Sedated and Paralysed
+  label2UCH: S or P
+  ClinicalTag: physiology-neurological-sedation-yesno
+  NHICcode: NIHR_HIC_ICU_0911
+  NHICdtCode: NIHR_HIC_ICU_0297
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0108:
+  shortName: h_rate
+  ItemId: 132
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: ECG
+  Classification4: Heart_rate
+  dataItem: Heart rate
+  dateandtime: yes
+  Units: bpm
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Heart Rate
+  label2UCH: HR
+  ClinicalTag: physiology-cardiovascular-heart-rate
+  NHICcode: NIHR_HIC_ICU_0108
+  NHICdtCode: NIHR_HIC_ICU_0254
+  NHICmetaCode: ~
+  range:
+    labels:
+      red: (0, 300)
+      amber: (11, 170) 
+      green: (60, 100)
+
+NIHR_HIC_ICU_0109:
+  shortName: h_rhythm
+  ItemId: 133
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: ECG
+  Classification4: Heart_rhythm
+  dataItem: Heart rhythm
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Cardiac Rhythm
+  label2UCH: Cardiac Rhythm
+  ClinicalTag: physiology-cardiovascular-heart-rhythm
+  NHICcode: NIHR_HIC_ICU_0109
+  NHICdtCode: NIHR_HIC_ICU_0255
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0110:
+  shortName: bp_m_a
+  ItemId: 134
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Arterial
+  dataItem: Mean arterial blood pressure - Art BPMean arterial blood pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Art BP
+  label2UCH: Mean
+  ClinicalTag: physiology-cardiovascular-mean-art-bp
+  NHICcode: NIHR_HIC_ICU_0110
+  NHICdtCode: NIHR_HIC_ICU_0256
+  NHICmetaCode: NIHR_HIC_ICU_0801
+NIHR_HIC_ICU_0111:
+  shortName: bp_m_ni
+  ItemId: 135
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Arterial
+  dataItem: Mean arterial blood pressure - NBPMean arterial blood pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: NBP
+  label2UCH: Mean
+  ClinicalTag: physiology-cardiovascular-mean-nbp
+  NHICcode: NIHR_HIC_ICU_0111
+  NHICdtCode: NIHR_HIC_ICU_0257
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0112:
+  shortName: bp_sys_a
+  ItemId: 136
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Arterial
+  dataItem: Systolic Arterial blood pressure - Art BPSystolic Arterial blood pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Art BP
+  label2UCH: Systolic
+  ClinicalTag: physiology-cardiovascular-systolic-art-bp
+  NHICcode: NIHR_HIC_ICU_0112
+  NHICdtCode: NIHR_HIC_ICU_0258
+  NHICmetaCode: NIHR_HIC_ICU_0802
+NIHR_HIC_ICU_0113:
+  shortName: bp_sys_ni
+  ItemId: 137
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Arterial
+  dataItem: Systolic Arterial blood pressure - NBPSystolic Arterial blood pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: NBP
+  label2UCH: Systolic
+  ClinicalTag: physiology-cardiovascular-systolic-nbp
+  NHICcode: NIHR_HIC_ICU_0113
+  NHICdtCode: NIHR_HIC_ICU_0259
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0114:
+  shortName: bp_dia_a
+  ItemId: 138
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Arterial
+  dataItem: Diastolic arterial blood pressure - Art BPDiastolic arterial blood pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Art BP
+  label2UCH: Diastolic
+  ClinicalTag: physiology-cardiovascular-diastolic-art-bp
+  NHICcode: NIHR_HIC_ICU_0114
+  NHICdtCode: NIHR_HIC_ICU_0260
+  NHICmetaCode: NIHR_HIC_ICU_0803
+NIHR_HIC_ICU_0115:
+  shortName: bp_dia_ni
+  ItemId: 139
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Arterial
+  dataItem: Diastolic arterial blood pressure - NBPDiastolic arterial blood pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: NBP
+  label2UCH: Diastolic
+  ClinicalTag: physiology-cardiovascular-diastolic-nbp
+  NHICcode: NIHR_HIC_ICU_0115
+  NHICdtCode: NIHR_HIC_ICU_0261
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0116:
+  shortName: venous_p
+  ItemId: 140
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Blood_pressure
+  Classification4: Venous
+  dataItem: Central venous pressure
+  dateandtime: yes
+  Units: mmHg
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: CVP
+  label2UCH: CVP
+  ClinicalTag: physiology-cardiovascular-cvp
+  NHICcode: NIHR_HIC_ICU_0116
+  NHICdtCode: NIHR_HIC_ICU_0262
+  NHICmetaCode: NIHR_HIC_ICU_0804
+NIHR_HIC_ICU_0117:
+  shortName: lidco_plus
+  ItemId: 141
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Cardiac_ouput_monitoring
+  Classification4: Cardiac_output_CO
+  dataItem: Cardiac output - LiDCO Plus
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: LIDCO Plus
+  label2UCH: CO
+  ClinicalTag: physiology-cardiovascular-lidco-plus
+  NHICcode: NIHR_HIC_ICU_0117
+  NHICdtCode: NIHR_HIC_ICU_0263
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0118:
+  shortName: lidco_rapid
+  ItemId: 142
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Cardiac_ouput_monitoring
+  Classification4: Cardiac_output_CO
+  dataItem: Cardiac output - LiDCO Rapid
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: LIDCO Rapid
+  label2UCH: CO
+  ClinicalTag: physiology-cardiovascular-lidco-rapid
+  NHICcode: NIHR_HIC_ICU_0118
+  NHICdtCode: NIHR_HIC_ICU_0264
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0119:
+  shortName: picco
+  ItemId: 143
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Cardiac_ouput_monitoring
+  Classification4: Cardiac_output_CO
+  dataItem: Cardiac output - PICCO
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Cardiac output measurement - PICCO
+  label2UCH: Not collected at UCH
+  ClinicalTag: physiology-cardiovascular-pico
+  NHICcode: NIHR_HIC_ICU_0119
+  NHICdtCode: NIHR_HIC_ICU_0265
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0120:
+  shortName: pa_catheter
+  ItemId: 144
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Cardiac_ouput_monitoring
+  Classification4: Cardiac_output_CO
+  dataItem: Cardiac output - PA Catheter
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Cardiac output measurement - PA catheter
+  label2UCH: Not Available
+  ClinicalTag: physiology-cardiovascular-pa-catheter
+  NHICcode: NIHR_HIC_ICU_0120
+  NHICdtCode: NIHR_HIC_ICU_0266
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0121:
+  shortName: doppler
+  ItemId: 145
+  Classification1: Physiology
+  Classification2: Cardiovascular
+  Classification3: Cardiac_ouput_monitoring
+  Classification4: Cardiac_output_CO
+  dataItem: Cardiac output - Doppler
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Oesophageal Doppler
+  label2UCH: CO
+  ClinicalTag: physiology-cardiovascular-doppler
+  NHICcode: NIHR_HIC_ICU_0121
+  NHICdtCode: NIHR_HIC_ICU_0267
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0126:
+  shortName: airway
+  ItemId: 146
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Endtracheal_airway
+  Classification4: ~
+  dataItem: Airway
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Airway
+  label2UCH: Airway
+  ClinicalTag: physiology-respiratory-airway
+  NHICcode: NIHR_HIC_ICU_0126
+  NHICdtCode: NIHR_HIC_ICU_0271
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0144:
+  shortName: ventilation
+  ItemId: 147
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilated
+  dataItem: Invasive or non-invasive (ventilation)
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Ventilator Mode
+  label2UCH: Mode
+  ClinicalTag: physiology-respiratory-invasive
+  NHICcode: NIHR_HIC_ICU_0144
+  NHICdtCode: NIHR_HIC_ICU_0281
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0549:
+  shortName: respiratory_rate_spon
+  ItemId: 148
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Respiratory_rate_patient_observation
+  dataItem: Spontaneous Respiratory Rate
+  dateandtime: yes
+  Units: bpm
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Spontaneous RR
+  label2UCH: Calculation
+  ClinicalTag: physiology-respiratory-spontanious-rate
+  NHICcode: NIHR_HIC_ICU_0549
+  NHICdtCode: NIHR_HIC_ICU_0282
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0145:
+  shortName: respiratory_rate_totl
+  ItemId: 149
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Respiratory_rate_patient_observation
+  dataItem: Total respiratory rate (monitor)
+  dateandtime: yes
+  Units: bpm
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Respiratory Rate
+  label2UCH: RR
+  ClinicalTag: physiology-respiratory-monitor-measured-rate
+  NHICcode: NIHR_HIC_ICU_0145
+  NHICdtCode: NIHR_HIC_ICU_0283
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0129:
+  shortName: spo2
+  ItemId: 150
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Oxygenation
+  dataItem: SpO2
+  dateandtime: yes
+  Units: percent
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: SpO2
+  label2UCH: SpO2
+  ClinicalTag: physiology-respiratory-spo2
+  NHICcode: NIHR_HIC_ICU_0129
+  NHICdtCode: NIHR_HIC_ICU_0272
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0913:
+  shortName: pao2_fio2
+  ItemId: 151
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Oxygenation
+  dataItem: PaO2/FiO2 ratio
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: P:F Ratio
+  label2UCH: P:F Ratio
+  ClinicalTag: physiology-respiratory-paO2-fiO2
+  NHICcode: NIHR_HIC_ICU_0913
+  NHICdtCode: NIHR_HIC_ICU_0914
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0150:
+  shortName: fraction_oxygen
+  ItemId: 152
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_settings
+  dataItem: Inspired fraction of oxygen
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 9.99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: FiO2
+  label2UCH: FiO2
+  ClinicalTag: physiology-respiratory-inspired-fraction-oxygen
+  NHICcode: NIHR_HIC_ICU_0150
+  NHICdtCode: NIHR_HIC_ICU_0287
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0151:
+  shortName: pe_expiratory_pressure
+  ItemId: 153
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_settings
+  dataItem: Positive End Expiratory Pressure
+  dateandtime: yes
+  Units: cm H2O
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: PEEP
+  label2UCH: PEEP
+  ClinicalTag: physiology-respiratory-positive-end-expiratory-pressure
+  NHICcode: NIHR_HIC_ICU_0151
+  NHICdtCode: NIHR_HIC_ICU_0288
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0147:
+  shortName: mand_resp_rate
+  ItemId: 154
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_settings
+  dataItem: Mandatory Respiratory Rate
+  dateandtime: yes
+  Units: bpm
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Set Resp Rate
+  label2UCH: Ventilator Rate
+  ClinicalTag: physiology-respiratory-mandatory-rate
+  NHICcode: NIHR_HIC_ICU_0147
+  NHICdtCode: NIHR_HIC_ICU_0284
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0146:
+  shortName: total_resp_rate
+  ItemId: 155
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_observations
+  dataItem: Total respiratory rate (ventilator)
+  dateandtime: yes
+  Units: bpm
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Measured rate (ventilated)
+  label2UCH: Ventilator Rate
+  ClinicalTag: physiology-respiratory-vantilator-measured-rate
+  NHICcode: NIHR_HIC_ICU_0146
+  NHICdtCode: NIHR_HIC_ICU_0546
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0148:
+  shortName: minute_volume
+  ItemId: 156
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_observations
+  dataItem: Minute volume
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Minute Volume
+  label2UCH: MV
+  ClinicalTag: physiology-respiratory-minute-volume
+  NHICcode: NIHR_HIC_ICU_0148
+  NHICdtCode: NIHR_HIC_ICU_0285
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0550:
+  shortName: tidal_volume
+  ItemId: 157
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_observations
+  dataItem: Tidal volume
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Tidal Volume (Measured)
+  label2UCH: TV
+  ClinicalTag: physiology-respiratory-tidal-volume
+  NHICcode: NIHR_HIC_ICU_0550
+  NHICdtCode: NIHR_HIC_ICU_0401
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0149:
+  shortName: airway_pressure_peak
+  ItemId: 158
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: Ventilator_observations
+  dataItem: Peak airway pressure
+  dateandtime: yes
+  Units: cm H2O
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Peak Airway Pres
+  label2UCH: PAP
+  ClinicalTag: physiology-respiratory-peak-airway-pressure
+  NHICcode: NIHR_HIC_ICU_0149
+  NHICdtCode: NIHR_HIC_ICU_0286
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0153:
+  shortName: frequency
+  ItemId: 159
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: HFOV_settings
+  dataItem: Frequency (Hz)
+  dateandtime: yes
+  Units: Hz
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Frequency measurement (hourly)
+  label2UCH: Not collected at UCH
+  ClinicalTag: physiology-respiratory-frequency
+  NHICcode: NIHR_HIC_ICU_0153
+  NHICdtCode: NIHR_HIC_ICU_0290
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0154:
+  shortName: cycle_volumn
+  ItemId: 160
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: HFOV_settings
+  dataItem: Cycle Volume
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Cycle volume measurement (hourly)
+  label2UCH: Not collected at UCH
+  ClinicalTag: physiology-respiratory-cycle-volume
+  NHICcode: NIHR_HIC_ICU_0154
+  NHICdtCode: NIHR_HIC_ICU_0291
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0155:
+  shortName: base_flow
+  ItemId: 161
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: HFOV_settings
+  dataItem: Base flow
+  dateandtime: yes
+  Units: l/min
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Base flow measurement (hourly)
+  label2UCH: Not collected at UCH
+  ClinicalTag: physiology-respiratory-base-flow
+  NHICcode: NIHR_HIC_ICU_0155
+  NHICdtCode: NIHR_HIC_ICU_0292
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0152:
+  shortName: airway_pressure
+  ItemId: 162
+  Classification1: Physiology
+  Classification2: Respiratory
+  Classification3: Ventilation
+  Classification4: HFOV_observations
+  dataItem: Airway pressure
+  dateandtime: yes
+  Units: cm H2O
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Airway pressure measurement (hourly)
+  label2UCH: Not collected at UCH
+  ClinicalTag: physiology-respiratory-airway-pressure
+  NHICcode: NIHR_HIC_ICU_0152
+  NHICdtCode: NIHR_HIC_ICU_0289
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0915:
+  shortName: fluid_balance_d
+  ItemId: 163
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Fluid_volumes
+  Classification4: Balance
+  dataItem: Fluid Balance (daily)
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: +/-99999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Fluid balance (Hourly)
+  label2UCH: Fluid balance (Hourly)
+  ClinicalTag: physiology-cardiovascular-fluid-balance-daily
+  NHICcode: NIHR_HIC_ICU_0915
+  NHICdtCode: NIHR_HIC_ICU_0916
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0413:
+  shortName: fluid_balance_h
+  ItemId: 164
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Fluid_volumes
+  Classification4: Balance
+  dataItem: Fluid Balance (hourly)
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: +/-99999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: (each) next working day after admission
+  ICNARC_Fieldname: ~
+  label1UCH: TOTAL FLUID BALANCE (24hr)
+  label2UCH: TOTAL FLUID BALANCE (24hr)
+  ClinicalTag: physiology-cardiovascular-fluid-balance-hourly
+  NHICcode: NIHR_HIC_ICU_0413
+  NHICdtCode: NIHR_HIC_ICU_0317
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0162:
+  shortName: urine_output
+  ItemId: 165
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Fluid_volumes
+  Classification4: Urine_output
+  dataItem: Urine output
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Urine output
+  label2UCH: Urine
+  ClinicalTag: physiology-renal-urine-output
+  NHICcode: NIHR_HIC_ICU_0162
+  NHICdtCode: NIHR_HIC_ICU_0299
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0161:
+  shortName: renal_replace
+  ItemId: 166
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Renal_replacement_therapy_RRT
+  Classification4: Mode
+  dataItem: Renal replacement mode
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: X
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Renal Replacement
+  label2UCH: Treatment mode
+  ClinicalTag: physiology-renal-replacement-mode
+  NHICcode: NIHR_HIC_ICU_0161
+  NHICdtCode: NIHR_HIC_ICU_0298
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0552:
+  shortName: duration_therapy
+  ItemId: 167
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Renal_replacement_therapy_RRT
+  Classification4: Duration_of_therapy
+  dataItem: Duration of therapy (hours per day)
+  dateandtime: yes
+  Units: hours
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Duration of therapy (hours per day)
+  label2UCH: Duration
+  ClinicalTag: physiology-renal-time-on-filter-per-day
+  NHICcode: NIHR_HIC_ICU_0552
+  NHICdtCode: NIHR_HIC_ICU_0869
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0553:
+  shortName: effluent_per_day
+  ItemId: 168
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Renal_replacement_therapy_RRT
+  Classification4: Fluid_volumes_RRT
+  dataItem: Total effluent per day
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: 99999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Total effluent (daily)
+  label2UCH: Effluent
+  ClinicalTag: physiology-renal-total-effluent-per-day
+  NHICcode: NIHR_HIC_ICU_0553
+  NHICdtCode: NIHR_HIC_ICU_0870
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0554:
+  shortName: dialysate
+  ItemId: 169
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Renal_replacement_therapy_RRT
+  Classification4: Fluid_volumes_RRT
+  dataItem: Dialysate
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: 99999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Total dialysate (daily)
+  label2UCH: Dialysate
+  ClinicalTag: physiology-renal-Dialysate
+  NHICcode: NIHR_HIC_ICU_0554
+  NHICdtCode: NIHR_HIC_ICU_0871
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0555:
+  shortName: replace_fluid_RRT
+  ItemId: 170
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Renal_replacement_therapy_RRT
+  Classification4: Fluid_volumes_RRT
+  dataItem: Replacement fluid during RRT
+  dateandtime: yes
+  Units: ml
+  Datatype: numeric
+  Template: 99999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Total replacement fluid during therapy (daily)
+  label2UCH: Replacement
+  ClinicalTag: physiology-renal-Replacement-fluid-during-RRT
+  NHICcode: NIHR_HIC_ICU_0555
+  NHICdtCode: NIHR_HIC_ICU_0872
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0556:
+  shortName: anticoagulation
+  ItemId: 171
+  Classification1: Physiology
+  Classification2: Renal
+  Classification3: Renal_replacement_therapy_RRT
+  Classification4: Anticoagulation
+  dataItem: Type of anticoagulation
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Type of anticoagulation
+  label2UCH: Not Available
+  ClinicalTag: physiology-renal-Type-of-anticoagulation
+  NHICcode: NIHR_HIC_ICU_0556
+  NHICdtCode: NIHR_HIC_ICU_0999
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0143:
+  shortName: position
+  ItemId: 172
+  Classification1: Nursing_other
+  Classification2: Position
+  Classification3: Position_measurement
+  Classification4: ~
+  dataItem: Position
+  dateandtime: yes
+  Units: ~
+  Datatype: list
+  Template: XX
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Patient Position
+  label2UCH: Patient Position
+  ClinicalTag: physiology-nursing-position
+  NHICcode: NIHR_HIC_ICU_0143
+  NHICdtCode: NIHR_HIC_ICU_0280
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0141:
+  shortName: temperature_central
+  ItemId: 173
+  Classification1: Nursing_other
+  Classification2: Temperature
+  Classification3: Central
+  Classification4: ~
+  dataItem: Temperature - Central
+  dateandtime: yes
+  Units: degree Celcius
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Central Temp
+  label2UCH: Central Temp
+  ClinicalTag: physiology-temp-central
+  NHICcode: NIHR_HIC_ICU_0141
+  NHICdtCode: NIHR_HIC_ICU_0278
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0142:
+  shortName: temperature_non_central
+  ItemId: 174
+  Classification1: Nursing_other
+  Classification2: Temperature
+  Classification3: Non_central
+  Classification4: ~
+  dataItem: Temperature - Non-central
+  dateandtime: yes
+  Units: degree Celcius
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Non Central Temp
+  label2UCH: Non Central Temp
+  ClinicalTag: physiology-temp-non-central
+  NHICcode: NIHR_HIC_ICU_0142
+  NHICdtCode: NIHR_HIC_ICU_0279
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0168:
+  shortName: sodium
+  ItemId: 175
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Electrolytes
+  Classification4: Sodium
+  dataItem: Sodium
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: 135 - 145
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Sodium
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-sodium
+  NHICcode: NIHR_HIC_ICU_0168
+  NHICdtCode: NIHR_HIC_ICU_0302
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0169:
+  shortName: sodium_abg_vbg
+  ItemId: 176
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Electrolytes
+  Classification4: Sodium
+  dataItem: Sodium ABG/VBG
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: 135 - 148
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.Sodium
+  label2UCH: ABG
+  ClinicalTag: laboratory-chemistry-sodium-abg-vbg
+  NHICcode: NIHR_HIC_ICU_0169
+  NHICdtCode: NIHR_HIC_ICU_0303
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0171:
+  shortName: potassium
+  ItemId: 177
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Electrolytes
+  Classification4: Potassium
+  dataItem: Potassium
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 3.5 - 5.1
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Potassium
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-potassium
+  NHICcode: NIHR_HIC_ICU_0171
+  NHICdtCode: NIHR_HIC_ICU_0304
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0172:
+  shortName: potassium_abg_vbg
+  ItemId: 178
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Electrolytes
+  Classification4: Potassium
+  dataItem: Potassium ABG/VBG
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 3.5 - 4.5
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.Potassium
+  label2UCH: ABG
+  ClinicalTag: laboratory-chemistry-potassium-abg-vbg
+  NHICcode: NIHR_HIC_ICU_0172
+  NHICdtCode: NIHR_HIC_ICU_0305
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0164:
+  shortName: urea
+  ItemId: 179
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Renal_markers
+  Classification4: Urea
+  dataItem: Urea
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 1.7 - 8.3
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Urea
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-urea
+  NHICcode: NIHR_HIC_ICU_0164
+  NHICdtCode: NIHR_HIC_ICU_0300
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0166:
+  shortName: creatinine
+  ItemId: 180
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Renal_markers
+  Classification4: Creatinine
+  dataItem: Creatinine
+  dateandtime: yes
+  Units: umol/l
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: 66 - 112
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Creatinine
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-creatinine
+  NHICcode: NIHR_HIC_ICU_0166
+  NHICdtCode: NIHR_HIC_ICU_0301
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0174:
+  shortName: bilirubin
+  ItemId: 181
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Liver_markers
+  Classification4: Bilirubin
+  dataItem: Bilirubin
+  dateandtime: yes
+  Units: umol/l
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: 0 - 20
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Total Bilirubin
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-bilirubin
+  NHICcode: NIHR_HIC_ICU_0174
+  NHICdtCode: NIHR_HIC_ICU_0306
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0918:
+  shortName: glucose_lab
+  ItemId: 182
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Glucose
+  Classification4: ~
+  dataItem: Glucose (laboratory)
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: ~
+  ICNARC_Fieldname: ~
+  label1UCH: Glucose
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-glucose-laboratory
+  NHICcode: NIHR_HIC_ICU_0918
+  NHICdtCode: NIHR_HIC_ICU_0919
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0175:
+  shortName: glucode_abg_vbg
+  ItemId: 183
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Glucose
+  Classification4: ~
+  dataItem: Glucose ABG/VBG
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 3.3 - 6.1
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.Blood Glucose
+  label2UCH: ABG
+  ClinicalTag: laboratory-chemistry-glucose-abg-vbg
+  NHICcode: NIHR_HIC_ICU_0175
+  NHICdtCode: NIHR_HIC_ICU_0307
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0176:
+  shortName: glucode_bedtest
+  ItemId: 184
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Glucose
+  Classification4: ~
+  dataItem: Glucose bedside test
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 0.6 - 33.3 (operating range)
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Finger Stick Blood Glucose
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-chemistry-glucose-bedside
+  NHICcode: NIHR_HIC_ICU_0176
+  NHICdtCode: NIHR_HIC_ICU_0308
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0557:
+  shortName: cprotein
+  ItemId: 185
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Inflammatory_markers
+  Classification4: CRP
+  dataItem: C reactive protein
+  dateandtime: yes
+  Units: mg/l
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: CRP
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-haematology-C-reactive-protein
+  NHICcode: NIHR_HIC_ICU_0557
+  NHICdtCode: NIHR_HIC_ICU_0800
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0136:
+  shortName: ph_abg_vbg
+  ItemId: 186
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Acid_base
+  Classification4: pH
+  dataItem: pH - ABG / VBG
+  dateandtime: yes
+  Units: ~
+  Datatype: numeric
+  Template: 9.99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.pH
+  label2UCH: ABG
+  ClinicalTag: laboratory-chemistry-ph-abg-vbg
+  NHICcode: NIHR_HIC_ICU_0136
+  NHICdtCode: NIHR_HIC_ICU_0276
+  NHICmetaCode: NIHR_HIC_ICU_0807
+NIHR_HIC_ICU_0138:
+  shortName: hco3_abg_vbg
+  ItemId: 187
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Acid_base
+  Classification4: HCO3
+  dataItem: HCO3 - ABG / VBG
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 21 - 28
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.HCO3
+  label2UCH: ABG
+  ClinicalTag: laboratory-chemistry-hco3-abg-vbg
+  NHICcode: NIHR_HIC_ICU_0138
+  NHICdtCode: NIHR_HIC_ICU_0277
+  NHICmetaCode: NIHR_HIC_ICU_0808
+NIHR_HIC_ICU_0122:
+  shortName: lactate_abg
+  ItemId: 188
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Lactate
+  Classification4: Lactate_blood_gas
+  dataItem: Lactate - ABG
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 0.4 - 2.2
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.Lactate
+  label2UCH: ABG
+  ClinicalTag: physiology-cardiovascular-lactate-abg
+  NHICcode: NIHR_HIC_ICU_0122
+  NHICdtCode: NIHR_HIC_ICU_0268
+  NHICmetaCode: NIHR_HIC_ICU_0980
+NIHR_HIC_ICU_0123:
+  shortName: lactate_lab
+  ItemId: 189
+  Classification1: Laboratory
+  Classification2: Chemistry
+  Classification3: Lactate
+  Classification4: Lactate_laboratory
+  dataItem: Lactate - Lab
+  dateandtime: yes
+  Units: mmol/l
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 0.5 - 2.2
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Lactate
+  label2UCH: Lab Value
+  ClinicalTag: physiology-cardiovascular-lactate-lab
+  NHICcode: NIHR_HIC_ICU_0123
+  NHICdtCode: NIHR_HIC_ICU_0269
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0179:
+  shortName: haemoglobin
+  ItemId: 190
+  Classification1: Laboratory
+  Classification2: Haematology
+  Classification3: Blood_count
+  Classification4: Haemoglobin_laboratory
+  dataItem: Haemoglobin
+  dateandtime: yes
+  Units: g/l
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: 115 - 174
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Haemoglobin
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-haematology-hb
+  NHICcode: NIHR_HIC_ICU_0179
+  NHICdtCode: NIHR_HIC_ICU_0310
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0178:
+  shortName: haemoglobin_abg_vbg
+  ItemId: 191
+  Classification1: Laboratory
+  Classification2: Haematology
+  Classification3: Blood_count
+  Classification4: Haemoglobin_blood_gas
+  dataItem: Haemoglobin ABG/VBG
+  dateandtime: yes
+  Units: g/l
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: 130 - 170
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.Haemoglibin
+  label2UCH: ABG
+  ClinicalTag: laboratory-haematology-hb-abg-vbg
+  NHICcode: NIHR_HIC_ICU_0178
+  NHICdtCode: NIHR_HIC_ICU_0309
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0182:
+  shortName: white_cell
+  ItemId: 192
+  Classification1: Laboratory
+  Classification2: Haematology
+  Classification3: Blood_count
+  Classification4: White_cell_count
+  dataItem: White cell count
+  dateandtime: yes
+  Units: x10^9/L
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 3.0 - 10.0
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: White Cell Count
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-haematology-white-cell-count
+  NHICcode: NIHR_HIC_ICU_0182
+  NHICdtCode: NIHR_HIC_ICU_0311
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0183:
+  shortName: neutrophil
+  ItemId: 193
+  Classification1: Laboratory
+  Classification2: Haematology
+  Classification3: Blood_count
+  Classification4: White_cell_count
+  dataItem: Neutrophil count
+  dateandtime: yes
+  Units: x10^9/L
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 2.0 - 7.5
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Neutrophils
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-haematology-neutrophil-count
+  NHICcode: NIHR_HIC_ICU_0183
+  NHICdtCode: NIHR_HIC_ICU_0312
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0184:
+  shortName: platelets
+  ItemId: 194
+  Classification1: Laboratory
+  Classification2: Haematology
+  Classification3: Blood_count
+  Classification4: Platelets
+  dataItem: Platelets
+  dateandtime: yes
+  Units: x10^9/L
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: 150 - 400
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Platelet Count
+  label2UCH: Lab Value
+  ClinicalTag: laboratory-haematology-platelets
+  NHICcode: NIHR_HIC_ICU_0184
+  NHICdtCode: NIHR_HIC_ICU_0313
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0186:
+  shortName: site
+  ItemId: 195
+  Classification1: Laboratory
+  Classification2: Microbiology
+  Classification3: Culture
+  Classification4: ~
+  dataItem: Site
+  dateandtime: yes
+  Units: ~
+  Datatype: text
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Site
+  label2UCH: Not Available
+  ClinicalTag: laboratory-microbiology-culture
+  NHICcode: NIHR_HIC_ICU_0186
+  NHICdtCode: NIHR_HIC_ICU_0314
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0187:
+  shortName: organism
+  ItemId: 196
+  Classification1: Laboratory
+  Classification2: Microbiology
+  Classification3: Culture
+  Classification4: ~
+  dataItem: Organism
+  dateandtime: yes
+  Units: ~
+  Datatype: text
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Organism(s)
+  label2UCH: Not Available
+  ClinicalTag: laboratory-microbiology-culture
+  NHICcode: NIHR_HIC_ICU_0187
+  NHICdtCode: NIHR_HIC_ICU_0314
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0188:
+  shortName: sensitivity
+  ItemId: 197
+  Classification1: Laboratory
+  Classification2: Microbiology
+  Classification3: Culture
+  Classification4: ~
+  dataItem: Sensitivity
+  dateandtime: yes
+  Units: ~
+  Datatype: text
+  Template: ~
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Sensitivity
+  label2UCH: Not Available
+  ClinicalTag: laboratory-microbiology-culture
+  NHICcode: NIHR_HIC_ICU_0188
+  NHICdtCode: NIHR_HIC_ICU_0314
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0132:
+  shortName: pao2_abg
+  ItemId: 198
+  Classification1: Laboratory
+  Classification2: Respiratory
+  Classification3: Gases
+  Classification4: Oxygenation
+  dataItem: PaO2 - ABG
+  dateandtime: yes
+  Units: kPa
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 10.67 - 13.33
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.PO2
+  label2UCH: ABG
+  ClinicalTag: physiology-respiratory-pao2-abg
+  NHICcode: NIHR_HIC_ICU_0132
+  NHICdtCode: NIHR_HIC_ICU_0274
+  NHICmetaCode: NIHR_HIC_ICU_0805
+NIHR_HIC_ICU_0130:
+  shortName: sao2_abg
+  ItemId: 199
+  Classification1: Laboratory
+  Classification2: Respiratory
+  Classification3: Gases
+  Classification4: Oxygenation
+  dataItem: SaO2 - ABG
+  dateandtime: yes
+  Units: percent
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.SAO2
+  label2UCH: ABG
+  ClinicalTag: physiology-respiratory-sao2-abg
+  NHICcode: NIHR_HIC_ICU_0130
+  NHICdtCode: NIHR_HIC_ICU_0273
+  NHICmetaCode: NIHR_HIC_ICU_0866
+NIHR_HIC_ICU_0125:
+  shortName: venous_saturation
+  ItemId: 200
+  Classification1: Laboratory
+  Classification2: Respiratory
+  Classification3: Gases
+  Classification4: Oxygenation
+  dataItem: Central venous saturation
+  dateandtime: yes
+  Units: percent
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Central Venous Saturation
+  label2UCH: CV SvO2
+  ClinicalTag: physiology-cardiovascular-cvs
+  NHICcode: NIHR_HIC_ICU_0125
+  NHICdtCode: NIHR_HIC_ICU_0270
+  NHICmetaCode: NIHR_HIC_ICU_0545
+NIHR_HIC_ICU_0134:
+  shortName: paco2_abg
+  ItemId: 201
+  Classification1: Laboratory
+  Classification2: Respiratory
+  Classification3: Gases
+  Classification4: Carbon_dioxide
+  dataItem: PaCO2 - ABG
+  dateandtime: yes
+  Units: kPa
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: 4.67 - 6.00
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: ABG.PCO2
+  label2UCH: ABG
+  ClinicalTag: physiology-respiratory-paco2-abg
+  NHICcode: NIHR_HIC_ICU_0134
+  NHICdtCode: NIHR_HIC_ICU_0275
+  NHICmetaCode: NIHR_HIC_ICU_0806
+NIHR_HIC_ICU_0414:
+  shortName: amikacin
+  ItemId: 202
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Aminoglycosides
+  Classification4: ~
+  dataItem: Amikacin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Amikacin
+  ClinicalTag: drug-anti-microbials-amikacin
+  NHICcode: NIHR_HIC_ICU_0414
+  NHICdtCode: NIHR_HIC_ICU_0318
+  NHICmetaCode: NIHR_HIC_ICU_0949
+NIHR_HIC_ICU_0437:
+  shortName: gentamicin
+  ItemId: 203
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Aminoglycosides
+  Classification4: ~
+  dataItem: Gentamicin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Gentamicin
+  ClinicalTag: drug-anti-microbials-gentamicin
+  NHICcode: NIHR_HIC_ICU_0437
+  NHICdtCode: NIHR_HIC_ICU_0341
+  NHICmetaCode: NIHR_HIC_ICU_0950
+NIHR_HIC_ICU_0444:
+  shortName: neomycin
+  ItemId: 204
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Aminoglycosides
+  Classification4: ~
+  dataItem: Neomycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Neomycin
+  ClinicalTag: drug-anti-microbials-neomycin
+  NHICcode: NIHR_HIC_ICU_0444
+  NHICdtCode: NIHR_HIC_ICU_0348
+  NHICmetaCode: NIHR_HIC_ICU_0951
+NIHR_HIC_ICU_0459:
+  shortName: tobramycin
+  ItemId: 205
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Aminoglycosides
+  Classification4: ~
+  dataItem: Tobramycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Tobramycin
+  ClinicalTag: drug-anti-microbials-tobramycin
+  NHICcode: NIHR_HIC_ICU_0459
+  NHICdtCode: NIHR_HIC_ICU_0363
+  NHICmetaCode: NIHR_HIC_ICU_0952
+NIHR_HIC_ICU_0447:
+  shortName: pentamidine
+  ItemId: 206
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_protozoal
+  Classification4: ~
+  dataItem: Pentamidine
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Pentamidine Isetionate
+  ClinicalTag: drug-anti-microbials-pentamidine
+  NHICcode: NIHR_HIC_ICU_0447
+  NHICdtCode: NIHR_HIC_ICU_0351
+  NHICmetaCode: NIHR_HIC_ICU_0953
+NIHR_HIC_ICU_0434:
+  shortName: ethambutal hcl
+  ItemId: 207
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_tuberculous
+  Classification4: ~
+  dataItem: Ethambutal HCL
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Ethambutol HCL
+  ClinicalTag: drug-anti-microbials-Ethambutal-hcl
+  NHICcode: NIHR_HIC_ICU_0434
+  NHICdtCode: NIHR_HIC_ICU_0338
+  NHICmetaCode: NIHR_HIC_ICU_0959
+NIHR_HIC_ICU_0438:
+  shortName: isoniazid
+  ItemId: 208
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_tuberculous
+  Classification4: ~
+  dataItem: Isoniazid
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Isoniazid
+  ClinicalTag: drug-anti-microbials-isoniazid
+  NHICcode: NIHR_HIC_ICU_0438
+  NHICdtCode: NIHR_HIC_ICU_0342
+  NHICmetaCode: NIHR_HIC_ICU_0954
+NIHR_HIC_ICU_0450:
+  shortName: pyrazinamide
+  ItemId: 209
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_tuberculous
+  Classification4: ~
+  dataItem: Pyrazinamide
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Pyrazinamide
+  ClinicalTag: drug-anti-microbials-pyrazinamide
+  NHICcode: NIHR_HIC_ICU_0450
+  NHICdtCode: NIHR_HIC_ICU_0354
+  NHICmetaCode: NIHR_HIC_ICU_0955
+NIHR_HIC_ICU_0452:
+  shortName: rifampacin
+  ItemId: 210
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_tuberculous
+  Classification4: ~
+  dataItem: Rifampacin
+  dateandtime: yes
+  Units: tab
+  Datatype: numeric
+  Template: 9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Rifampicin
+  ClinicalTag: drug-anti-microbials-rifampacin
+  NHICcode: NIHR_HIC_ICU_0452
+  NHICdtCode: NIHR_HIC_ICU_0356
+  NHICmetaCode: NIHR_HIC_ICU_0956
+NIHR_HIC_ICU_0453:
+  shortName: rifater
+  ItemId: 211
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_tuberculous
+  Classification4: ~
+  dataItem: Rifater
+  dateandtime: yes
+  Units: tab
+  Datatype: numeric
+  Template: 9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Rifater
+  ClinicalTag: drug-anti-microbials-rifater
+  NHICcode: NIHR_HIC_ICU_0453
+  NHICdtCode: NIHR_HIC_ICU_0357
+  NHICmetaCode: NIHR_HIC_ICU_0957
+NIHR_HIC_ICU_0454:
+  shortName: rifinah
+  ItemId: 212
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Anti_tuberculous
+  Classification4: ~
+  dataItem: Rifinah
+  dateandtime: yes
+  Units: tab
+  Datatype: numeric
+  Template: 9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Rifinah
+  ClinicalTag: drug-anti-microbials-rifinah
+  NHICcode: NIHR_HIC_ICU_0454
+  NHICdtCode: NIHR_HIC_ICU_0358
+  NHICmetaCode: NIHR_HIC_ICU_0958
+NIHR_HIC_ICU_0432:
+  shortName: ertapenem
+  ItemId: 213
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Carbapenems
+  Classification4: ~
+  dataItem: Ertapenem
+  dateandtime: yes
+  Units: g
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Ertapenem
+  ClinicalTag: drug-anti-microbials-ertapenem
+  NHICcode: NIHR_HIC_ICU_0432
+  NHICdtCode: NIHR_HIC_ICU_0336
+  NHICmetaCode: NIHR_HIC_ICU_0576
+NIHR_HIC_ICU_0441:
+  shortName: meropenem
+  ItemId: 214
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Carbapenems
+  Classification4: ~
+  dataItem: Meropenem
+  dateandtime: yes
+  Units: g
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Meropenem
+  ClinicalTag: drug-anti-microbials-meropenem
+  NHICcode: NIHR_HIC_ICU_0441
+  NHICdtCode: NIHR_HIC_ICU_0345
+  NHICmetaCode: NIHR_HIC_ICU_0967
+NIHR_HIC_ICU_0418:
+  shortName: cefotaxime
+  ItemId: 215
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Cephalosporins
+  Classification4: ~
+  dataItem: Cefotaxime
+  dateandtime: yes
+  Units: g
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Cefotaxime
+  ClinicalTag: drug-anti-microbials-cefotaxime
+  NHICcode: NIHR_HIC_ICU_0418
+  NHICdtCode: NIHR_HIC_ICU_0322
+  NHICmetaCode: NIHR_HIC_ICU_0987
+NIHR_HIC_ICU_0419:
+  shortName: ceftazidime
+  ItemId: 216
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Cephalosporins
+  Classification4: ~
+  dataItem: Ceftazidime
+  dateandtime: yes
+  Units: g
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Ceftazidime
+  ClinicalTag: drug-anti-microbials-ceftazidime
+  NHICcode: NIHR_HIC_ICU_0419
+  NHICdtCode: NIHR_HIC_ICU_0323
+  NHICmetaCode: NIHR_HIC_ICU_0588
+NIHR_HIC_ICU_0420:
+  shortName: ceftriaxone
+  ItemId: 217
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Cephalosporins
+  Classification4: ~
+  dataItem: Ceftriaxone
+  dateandtime: yes
+  Units: g
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Ceftriaxone
+  ClinicalTag: drug-anti-microbials-ceftriaxone
+  NHICcode: NIHR_HIC_ICU_0420
+  NHICdtCode: NIHR_HIC_ICU_0324
+  NHICmetaCode: NIHR_HIC_ICU_0589
+NIHR_HIC_ICU_0421:
+  shortName: cefuroxime
+  ItemId: 218
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Cephalosporins
+  Classification4: ~
+  dataItem: Cefuroxime
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Cefuroxime
+  ClinicalTag: drug-anti-microbials-cefuroxime
+  NHICcode: NIHR_HIC_ICU_0421
+  NHICdtCode: NIHR_HIC_ICU_0325
+  NHICmetaCode: NIHR_HIC_ICU_0590
+NIHR_HIC_ICU_0422:
+  shortName: chloramphenicol
+  ItemId: 219
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Chloramphenicol
+  Classification4: ~
+  dataItem: Chloramphenicol
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Chloramphenicol
+  ClinicalTag: drug-anti-microbials-chloramphenicol
+  NHICcode: NIHR_HIC_ICU_0422
+  NHICdtCode: NIHR_HIC_ICU_0326
+  NHICmetaCode: NIHR_HIC_ICU_0567
+NIHR_HIC_ICU_0436:
+  shortName: fuscidic acid
+  ItemId: 220
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Fusidanes
+  Classification4: ~
+  dataItem: Fuscidic acid
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Fusidic Acid
+  ClinicalTag: drug-anti-microbials-fusidic-acid-ng
+  NHICcode: NIHR_HIC_ICU_0436
+  NHICdtCode: NIHR_HIC_ICU_0340
+  NHICmetaCode: NIHR_HIC_ICU_0579
+NIHR_HIC_ICU_0456:
+  shortName: sodium fusidate
+  ItemId: 221
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Fusidanes
+  Classification4: ~
+  dataItem: Sodium Fusidate
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Sodium fusidate
+  ClinicalTag: drug-anti-microbials-sodium-fusidate
+  NHICcode: NIHR_HIC_ICU_0456
+  NHICdtCode: NIHR_HIC_ICU_0360
+  NHICmetaCode: NIHR_HIC_ICU_0960
+NIHR_HIC_ICU_0457:
+  shortName: teicoplanin
+  ItemId: 222
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Glycopeptides
+  Classification4: ~
+  dataItem: Teicoplanin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Teicoplanin
+  ClinicalTag: drug-anti-microbials-teicoplanin
+  NHICcode: NIHR_HIC_ICU_0457
+  NHICdtCode: NIHR_HIC_ICU_0361
+  NHICmetaCode: NIHR_HIC_ICU_0961
+NIHR_HIC_ICU_0461:
+  shortName: vancomycin
+  ItemId: 223
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Glycopeptides
+  Classification4: ~
+  dataItem: Vancomycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Vancomycin
+  ClinicalTag: drug-anti-microbials-vancomycin
+  NHICcode: NIHR_HIC_ICU_0461
+  NHICdtCode: NIHR_HIC_ICU_0365
+  NHICmetaCode: NIHR_HIC_ICU_0964
+NIHR_HIC_ICU_0425:
+  shortName: clindamycin
+  ItemId: 224
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Lincosamides
+  Classification4: ~
+  dataItem: Clindamycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Clindamycin
+  ClinicalTag: drug-anti-microbials-clindamycin
+  NHICcode: NIHR_HIC_ICU_0425
+  NHICdtCode: NIHR_HIC_ICU_0329
+  NHICmetaCode: NIHR_HIC_ICU_0591
+NIHR_HIC_ICU_0416:
+  shortName: azithromycin
+  ItemId: 225
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Macrolides
+  Classification4: ~
+  dataItem: Azithromycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Azithromycin
+  ClinicalTag: drug-anti-microbials-azithromycin
+  NHICcode: NIHR_HIC_ICU_0416
+  NHICdtCode: NIHR_HIC_ICU_0320
+  NHICmetaCode: NIHR_HIC_ICU_0986
+NIHR_HIC_ICU_0424:
+  shortName: clarithromycin
+  ItemId: 226
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Macrolides
+  Classification4: ~
+  dataItem: Clarithromycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Clarithromycin
+  ClinicalTag: drug-anti-microbials-clarithromycin
+  NHICcode: NIHR_HIC_ICU_0424
+  NHICdtCode: NIHR_HIC_ICU_0328
+  NHICmetaCode: NIHR_HIC_ICU_0594
+NIHR_HIC_ICU_0433:
+  shortName: erythromycin
+  ItemId: 227
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Macrolides
+  Classification4: ~
+  dataItem: Erythromycin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Erythromycin
+  ClinicalTag: drug-anti-microbials-erythromycin
+  NHICcode: NIHR_HIC_ICU_0433
+  NHICdtCode: NIHR_HIC_ICU_0337
+  NHICmetaCode: NIHR_HIC_ICU_0577
+NIHR_HIC_ICU_0445:
+  shortName: nitrofurantion
+  ItemId: 228
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Nitrofurans
+  Classification4: ~
+  dataItem: Nitrofurantion
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Nitrofurantoin
+  ClinicalTag: drug-anti-microbials-nitrofurantion
+  NHICcode: NIHR_HIC_ICU_0445
+  NHICdtCode: NIHR_HIC_ICU_0349
+  NHICmetaCode: NIHR_HIC_ICU_0580
+NIHR_HIC_ICU_0442:
+  shortName: metronidazole
+  ItemId: 229
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Nitroimidazole
+  Classification4: ~
+  dataItem: Metronidazole
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Metronidazole
+  ClinicalTag: drug-anti-microbials-metronidazole
+  NHICcode: NIHR_HIC_ICU_0442
+  NHICdtCode: NIHR_HIC_ICU_0346
+  NHICmetaCode: NIHR_HIC_ICU_0968
+NIHR_HIC_ICU_0440:
+  shortName: linezolid
+  ItemId: 230
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Oxazolidinone
+  Classification4: ~
+  dataItem: Linezolid
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Linezolid
+  ClinicalTag: drug-anti-microbials-linezolid
+  NHICcode: NIHR_HIC_ICU_0440
+  NHICdtCode: NIHR_HIC_ICU_0344
+  NHICmetaCode: NIHR_HIC_ICU_0966
+NIHR_HIC_ICU_0415:
+  shortName: amoxicillin
+  ItemId: 231
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Penicillins
+  Classification4: ~
+  dataItem: Amoxicillin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Amoxicillin
+  ClinicalTag: drug-anti-microbials-amoxicillin
+  NHICcode: NIHR_HIC_ICU_0415
+  NHICdtCode: NIHR_HIC_ICU_0319
+  NHICmetaCode: NIHR_HIC_ICU_0985
+NIHR_HIC_ICU_0417:
+  shortName: benzylpenicillin
+  ItemId: 232
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Penicillins
+  Classification4: ~
+  dataItem: Benzylpenicillin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Benzylpenicillin
+  ClinicalTag: drug-anti-microbials-benzylpenicillin
+  NHICcode: NIHR_HIC_ICU_0417
+  NHICdtCode: NIHR_HIC_ICU_0321
+  NHICmetaCode: NIHR_HIC_ICU_0562
+NIHR_HIC_ICU_0426:
+  shortName: co-amoxiclav
+  ItemId: 233
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Penicillins
+  Classification4: ~
+  dataItem: Co-Amoxiclav
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Co-Amoxiclav
+  ClinicalTag: drug-anti-microbials-co-amoxiclav
+  NHICcode: NIHR_HIC_ICU_0426
+  NHICdtCode: NIHR_HIC_ICU_0330
+  NHICmetaCode: NIHR_HIC_ICU_0571
+NIHR_HIC_ICU_0435:
+  shortName: flucloxacillin
+  ItemId: 234
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Penicillins
+  Classification4: ~
+  dataItem: Flucloxacillin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Flucloxacillin
+  ClinicalTag: drug-anti-microbials-flucloxacillin
+  NHICcode: NIHR_HIC_ICU_0435
+  NHICdtCode: NIHR_HIC_ICU_0339
+  NHICmetaCode: NIHR_HIC_ICU_0578
+NIHR_HIC_ICU_0448:
+  shortName: phenoxymethylpenicillin
+  ItemId: 235
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Penicillins
+  Classification4: ~
+  dataItem: Phenoxymethylpenicillin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Phenoxymethylpenicillin
+  ClinicalTag: drug-anti-microbials-phenoxymethylpenicillin
+  NHICcode: NIHR_HIC_ICU_0448
+  NHICdtCode: NIHR_HIC_ICU_0352
+  NHICmetaCode: NIHR_HIC_ICU_0582
+NIHR_HIC_ICU_0449:
+  shortName: piperacillin_tazobactam
+  ItemId: 236
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Penicillins
+  Classification4: ~
+  dataItem: Piperacillin/Tazobactam
+  dateandtime: yes
+  Units: g
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Piperacillin/Tazobactam
+  ClinicalTag: drug-anti-microbials-piperacillin-tazobactam
+  NHICcode: NIHR_HIC_ICU_0449
+  NHICdtCode: NIHR_HIC_ICU_0353
+  NHICmetaCode: NIHR_HIC_ICU_0583
+NIHR_HIC_ICU_0427:
+  shortName: colistin
+  ItemId: 237
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Polymyxins
+  Classification4: ~
+  dataItem: Colistin
+  dateandtime: yes
+  Units: megaunits
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Colistin
+  ClinicalTag: drug-anti-microbials-colistin
+  NHICcode: NIHR_HIC_ICU_0427
+  NHICdtCode: NIHR_HIC_ICU_0331
+  NHICmetaCode: NIHR_HIC_ICU_0572
+NIHR_HIC_ICU_0423:
+  shortName: ciprofloxacin
+  ItemId: 238
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Quinolones
+  Classification4: ~
+  dataItem: Ciprofloxacin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Ciprofloxacin
+  ClinicalTag: drug-anti-microbials-ciprofloxacin
+  NHICcode: NIHR_HIC_ICU_0423
+  NHICdtCode: NIHR_HIC_ICU_0327
+  NHICmetaCode: NIHR_HIC_ICU_0593
+NIHR_HIC_ICU_0439:
+  shortName: levofloxacin
+  ItemId: 239
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Quinolones
+  Classification4: ~
+  dataItem: Levofloxacin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Levofloxacin
+  ClinicalTag: drug-anti-microbials-levofloxacin
+  NHICcode: NIHR_HIC_ICU_0439
+  NHICdtCode: NIHR_HIC_ICU_0343
+  NHICmetaCode: NIHR_HIC_ICU_0965
+NIHR_HIC_ICU_0443:
+  shortName: moxifloxacin
+  ItemId: 240
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Quinolones
+  Classification4: ~
+  dataItem: Moxifloxacin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Moxifloxacin
+  ClinicalTag: drug-anti-microbials-moxifloxacin
+  NHICcode: NIHR_HIC_ICU_0443
+  NHICdtCode: NIHR_HIC_ICU_0347
+  NHICmetaCode: NIHR_HIC_ICU_0969
+NIHR_HIC_ICU_0446:
+  shortName: ofloxacin
+  ItemId: 241
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Quinolones
+  Classification4: ~
+  dataItem: Ofloxacin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Ofloxacin
+  ClinicalTag: drug-anti-microbials-ofloxacin
+  NHICcode: NIHR_HIC_ICU_0446
+  NHICdtCode: NIHR_HIC_ICU_0350
+  NHICmetaCode: NIHR_HIC_ICU_0581
+NIHR_HIC_ICU_0428:
+  shortName: co-trimoxazole
+  ItemId: 242
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Sulfonamides_trimethoprim
+  Classification4: ~
+  dataItem: Co-Trimoxazole
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 9999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Co-Trimoxazole
+  ClinicalTag: drug-anti-microbials-co-trimoxazole
+  NHICcode: NIHR_HIC_ICU_0428
+  NHICdtCode: NIHR_HIC_ICU_0332
+  NHICmetaCode: NIHR_HIC_ICU_0592
+NIHR_HIC_ICU_0460:
+  shortName: trimethoprim
+  ItemId: 243
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Sulfonamides_trimethoprim
+  Classification4: ~
+  dataItem: Trimethoprim
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Trimethoprim
+  ClinicalTag: drug-anti-microbials-trimethoprim
+  NHICcode: NIHR_HIC_ICU_0460
+  NHICdtCode: NIHR_HIC_ICU_0364
+  NHICmetaCode: NIHR_HIC_ICU_0963
+NIHR_HIC_ICU_0429:
+  shortName: demeclocycline hcl
+  ItemId: 244
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Tetracyclines
+  Classification4: ~
+  dataItem: Demeclocycline HCL
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Demeclocycline HCL
+  ClinicalTag: drug-anti-microbials-demeclocycline-hcl
+  NHICcode: NIHR_HIC_ICU_0429
+  NHICdtCode: NIHR_HIC_ICU_0333
+  NHICmetaCode: NIHR_HIC_ICU_0574
+NIHR_HIC_ICU_0430:
+  shortName: doxycycline
+  ItemId: 245
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Tetracyclines
+  Classification4: ~
+  dataItem: Doxycycline
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Doxycycline
+  ClinicalTag: drug-anti-microbials-doxycycline
+  NHICcode: NIHR_HIC_ICU_0430
+  NHICdtCode: NIHR_HIC_ICU_0334
+  NHICmetaCode: NIHR_HIC_ICU_0575
+NIHR_HIC_ICU_0458:
+  shortName: tigecycline
+  ItemId: 246
+  Classification1: Drugs
+  Classification2: Anti_microbials
+  Classification3: Tetracyclines
+  Classification4: ~
+  dataItem: Tigecycline
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Antibiotic
+  label2UCH: Tigecycline
+  ClinicalTag: drug-anti-microbials-tigecycline
+  NHICcode: NIHR_HIC_ICU_0458
+  NHICdtCode: NIHR_HIC_ICU_0362
+  NHICmetaCode: NIHR_HIC_ICU_0962
+NIHR_HIC_ICU_0462:
+  shortName: propofol
+  ItemId: 247
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Sedatives_continuous_infusion
+  Classification4: Induction_agent
+  dataItem: Propofol
+  dateandtime: yes
+  Units: mg/hr
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Propofol
+  ClinicalTag: drug-cns-propofol
+  NHICcode: NIHR_HIC_ICU_0462
+  NHICdtCode: NIHR_HIC_ICU_0369
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0558:
+  shortName: thiopentone_thiopental
+  ItemId: 248
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Sedatives_continuous_infusion
+  Classification4: Barbiturates
+  dataItem: Thiopentone / Thiopental
+  dateandtime: yes
+  Units: mg/kg/hr
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Thiopental
+  ClinicalTag: drug-cns-Thiopentone-Thiopental
+  NHICcode: NIHR_HIC_ICU_0558
+  NHICdtCode: NIHR_HIC_ICU_0876
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0463:
+  shortName: midazolam
+  ItemId: 249
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Sedatives_continuous_infusion
+  Classification4: Benzodiazepines
+  dataItem: Midazolam
+  dateandtime: yes
+  Units: mg/hr
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Midazolam
+  ClinicalTag: drug-cns-midazolam
+  NHICcode: NIHR_HIC_ICU_0463
+  NHICdtCode: NIHR_HIC_ICU_0367
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0559:
+  shortName: clonidine
+  ItemId: 250
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Sedatives_continuous_infusion
+  Classification4: Alpha_2_agonists
+  dataItem: Clonidine
+  dateandtime: yes
+  Units: mcg/hr
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Clonidine
+  ClinicalTag: drug-cns-clonidine
+  NHICcode: NIHR_HIC_ICU_0559
+  NHICdtCode: NIHR_HIC_ICU_0873
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0560:
+  shortName: dexmedetomidine
+  ItemId: 251
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Sedatives_continuous_infusion
+  Classification4: Alpha_2_agonists
+  dataItem: Dexmedetomidine
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Dexmedetomidine
+  ClinicalTag: drug-cns-dexmedetomidine
+  NHICcode: NIHR_HIC_ICU_0560
+  NHICdtCode: NIHR_HIC_ICU_0372
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0561:
+  shortName: ketamine
+  ItemId: 252
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Sedatives_continuous_infusion
+  Classification4: Phencyclidines
+  dataItem: Ketamine
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Ketamine
+  ClinicalTag: drug-cns-ketamine
+  NHICcode: NIHR_HIC_ICU_0561
+  NHICdtCode: NIHR_HIC_ICU_0874
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0242:
+  shortName: fentanyl
+  ItemId: 253
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Analgesics
+  Classification4: Opioids
+  dataItem: Fentanyl
+  dateandtime: yes
+  Units: mcg/hr
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Fentanyl
+  ClinicalTag: drug-cns-fentanyl
+  NHICcode: NIHR_HIC_ICU_0242
+  NHICdtCode: NIHR_HIC_ICU_0371
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0563:
+  shortName: morphine
+  ItemId: 254
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Analgesics
+  Classification4: Opioids
+  dataItem: Morphine
+  dateandtime: yes
+  Units: mg/hr
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Morphine
+  ClinicalTag: drug-cns-morphine
+  NHICcode: NIHR_HIC_ICU_0563
+  NHICdtCode: NIHR_HIC_ICU_0875
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0464:
+  shortName: remifentanil
+  ItemId: 255
+  Classification1: Drugs
+  Classification2: CNS
+  Classification3: Analgesics
+  Classification4: Opioids
+  dataItem: Remifentanil
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Remifentanil
+  ClinicalTag: drug-cns-remifentanil
+  NHICcode: NIHR_HIC_ICU_0464
+  NHICdtCode: NIHR_HIC_ICU_0368
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0469:
+  shortName: levosimendan
+  ItemId: 256
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Calcium_sensitiser
+  dataItem: Levosimendan
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Levosimedan
+  ClinicalTag: infusion-cvs-vasoactive-levosimendan
+  NHICcode: NIHR_HIC_ICU_0469
+  NHICdtCode: NIHR_HIC_ICU_0892
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0465:
+  shortName: adrenaline
+  ItemId: 257
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Catecholamines
+  dataItem: Adrenaline
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 9.99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Adrenaline
+  ClinicalTag: infusion-cvs-vasoactive-adrenaline
+  NHICcode: NIHR_HIC_ICU_0465
+  NHICdtCode: NIHR_HIC_ICU_0888
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0466:
+  shortName: dobutamine
+  ItemId: 258
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Catecholamines
+  dataItem: Dobutamine
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Dobutamine
+  ClinicalTag: infusion-cvs-vasoactive-dobutamine
+  NHICcode: NIHR_HIC_ICU_0466
+  NHICdtCode: NIHR_HIC_ICU_0889
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0467:
+  shortName: dopamine
+  ItemId: 259
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Catecholamines
+  dataItem: Dopamine
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Dopamine
+  ClinicalTag: infusion-cvs-vasoactive-dopamine
+  NHICcode: NIHR_HIC_ICU_0467
+  NHICdtCode: NIHR_HIC_ICU_0890
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0564:
+  shortName: dopexamine
+  ItemId: 260
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Catecholamines
+  dataItem: Dopexamine
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Dopexamine
+  ClinicalTag: infusion-cvs-vasoactive-dopexamine
+  NHICcode: NIHR_HIC_ICU_0564
+  NHICdtCode: NIHR_HIC_ICU_0897
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0468:
+  shortName: enoximone
+  ItemId: 261
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Phosphodiesterase_inhibitors
+  dataItem: Enoximone
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Enoximone
+  ClinicalTag: infusion-cvs-vasoactive-enoximone
+  NHICcode: NIHR_HIC_ICU_0468
+  NHICdtCode: NIHR_HIC_ICU_0891
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0252:
+  shortName: milrinone
+  ItemId: 262
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Inotropes
+  Classification4: Phosphodiesterase_inhibitors
+  dataItem: Milrinone
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Milrinone
+  ClinicalTag: infusion-cvs-vasoactive-milrinone
+  NHICcode: NIHR_HIC_ICU_0252
+  NHICdtCode: NIHR_HIC_ICU_0896
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0470:
+  shortName: noradrenaline
+  ItemId: 263
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Vasopressors
+  Classification4: Catecholamines
+  dataItem: Noradrenaline
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 9.99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Noradrenaline (UCH)
+  ClinicalTag: infusion-cvs-vasoactive-noradrenaline
+  NHICcode: NIHR_HIC_ICU_0470
+  NHICdtCode: NIHR_HIC_ICU_0893
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0471:
+  shortName: vasopressin
+  ItemId: 264
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Vasopressors
+  Classification4: Vasopressin
+  dataItem: Vasopressin
+  dateandtime: yes
+  Units: units/min
+  Datatype: numeric
+  Template: 9.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Vasopressin
+  ClinicalTag: infusion-cvs-vasoactive-vasopressin
+  NHICcode: NIHR_HIC_ICU_0471
+  NHICdtCode: NIHR_HIC_ICU_0894
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0565:
+  shortName: terlipressin
+  ItemId: 265
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Vasopressors
+  Classification4: Vasopressin_analogue
+  dataItem: Terlipressin
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Terlipressin
+  ClinicalTag: infusion-cvs-vasoactive-terlipressin
+  NHICcode: NIHR_HIC_ICU_0565
+  NHICdtCode: NIHR_HIC_ICU_0867
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0906:
+  shortName: esmolol
+  ItemId: 266
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Adjuncts
+  Classification4: IV_beta_blockers
+  dataItem: Esmolol
+  dateandtime: yes
+  Units: mcg/kg/min
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Esmolol
+  ClinicalTag: Infusion-cvs-vasoactive-adjuncts-esmolol
+  NHICcode: NIHR_HIC_ICU_0906
+  NHICdtCode: NIHR_HIC_ICU_0920
+  NHICmetaCode: ~
+NIHR_HIC_ICU_0907:
+  shortName: metoprolol
+  ItemId: 267
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Adjuncts
+  Classification4: IV_beta_blockers
+  dataItem: Metoprolol
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 99.9
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Metoprolol
+  ClinicalTag: Infusion-cvs-vasoactive-adjuncts-metoprolol
+  NHICcode: NIHR_HIC_ICU_0907
+  NHICdtCode: NIHR_HIC_ICU_0921
+  NHICmetaCode: NIHR_HIC_ICU_0981
+NIHR_HIC_ICU_0908:
+  shortName: dexamethasone
+  ItemId: 268
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Adjuncts
+  Classification4: IV_steroids
+  dataItem: Dexamethasone
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 99
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Dexamethasone
+  ClinicalTag: Infusion-cvs-vasoactive-adjuncts-dexamethasone
+  NHICcode: NIHR_HIC_ICU_0908
+  NHICdtCode: NIHR_HIC_ICU_0922
+  NHICmetaCode: NIHR_HIC_ICU_0982
+NIHR_HIC_ICU_0909:
+  shortName: hydrocortisone
+  ItemId: 269
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Adjuncts
+  Classification4: IV_steroids
+  dataItem: Hydrocortisone
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Hydrocortisone
+  ClinicalTag: Infusion-cvs-vasoactive-adjuncts-hydrocortisone
+  NHICcode: NIHR_HIC_ICU_0909
+  NHICdtCode: NIHR_HIC_ICU_0923
+  NHICmetaCode: NIHR_HIC_ICU_0983
+NIHR_HIC_ICU_0910:
+  shortName: methylprednisolone
+  ItemId: 270
+  Classification1: Drugs
+  Classification2: CVSvasoactive
+  Classification3: Adjuncts
+  Classification4: IV_steroids
+  dataItem: Methylprednisolone
+  dateandtime: yes
+  Units: mg
+  Datatype: numeric
+  Template: 999
+  Reference_ranges: ~
+  UCHsource: ICIP
+  Timing: within 30 min of input
+  ICNARC_Fieldname: ~
+  label1UCH: Drug
+  label2UCH: Methylprednisolone
+  ClinicalTag: Infusion-cvs-vasoactive-adjuncts-methylprednisolone
+  NHICcode: NIHR_HIC_ICU_0910
+  NHICdtCode: NIHR_HIC_ICU_0924
+  NHICmetaCode: NIHR_HIC_ICU_0984
+

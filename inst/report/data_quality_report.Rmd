@@ -1,0 +1,104 @@
+---
+title: Data Quality Report
+nep: `r ccd@nepisodes`
+np: `r max(ccd@infotb$pid, na.rm=T)`
+site: `r s <- unique(ccd@infotb$site_id); s[s!="NA"]`
+admt: `r min(ccd@infotb$t_admission, na.rm=T)`
+disct: `r max(ccd@infotb$t_discharge, na.rm=T)`
+dbupdate: `r max(ccd@infotb$parse_time)`
+fulldb: `r dbfull`
+
+---
+
+    
+```{r, echo=FALSE, warning=FALSE}
+item2d <- c("h_rate", "bp_m_a", "bp_sys_a", "lactate_abg", "bilirubin",
+            "fluid_balance_h", "pao2_abg")
+
+new.config <- function(items) {
+    conf <- list()
+    for (i in items) conf[[stname2code(i)]] <- list()
+    conf
+}
+if (!exists("cctb"))
+    cctb <<- create.cctable(ccd, conf=new.config(item2d), freq=1)$torigin
+
+suppressWarnings(library(pander))
+panderOptions("digits", 2) 
+panderOptions("table.split.table", Inf)
+demg <<- sql.demographic.table(ccd)
+```
+
+
+
+# Data Summary
+```{r, echo=FALSE}
+dp <- total.data.point(ccd)
+np <- max(ccd@infotb$pid, na.rm=T)
+```
+
+This database contains **`r ccd@nepisodes`** episode data from 
+**`r length(s[s!="NA"])`** sites. Based on the NHS numbers and
+PAS numbers, we can identify **`r np`** unique patients, among which the earliest
+admission is `r min(ccd@infotb$t_admission, na.rm=T)` and the latest discharge time is
+`r max(ccd@infotb$t_discharge, na.rm=T)`. There are `r dp `
+total data points found in the current database, which makes in average
+`r round(dp/np)` per unique patient. 
+
+
+## Site reference
+```{r, echo=FALSE}
+pander(site.info()[, 1:3], style="rmarkdown")
+```
+
+## The original XML files and parse information
+```{r, echo=FALSE, results="asis"}
+fs <- file.summary(ccd)
+pander(fs[, c("File", "Number of Episode", "Sites"), with=F])
+```
+
+```{r fig.width=15, fig.height=10, echo=FALSE}
+xml.file.duration.plot(ccd)
+```
+```{r fig.width=15, fig.height=10, echo=FALSE}
+xml.site.duration.plot(ccd)
+```
+\newpage
+
+```{r, echo=FALSE, results="asis"}
+table1(demg, c("SEX", "ETHNIC", "LOCA", "DIS", "HDIS"))
+```
+# Completeness
+## Demographic data completeness
+```{r, echo=FALSE, warning=FALSE, results="asis"}
+demographic.data.completeness(demg)
+```
+## Sample period of time-wise data
+This is the section to show the completeness of some key time-wise data, e.g.
+physiological data. The completeness of data is measured by sample period. 
+The sample period $P$ is defined as the ratio of the total
+admission hour $T$ to the number of valid hours $D$ where data can be found.
+$$P = \frac{T}{D}$$
+
+
+
+
+```{r, echo=FALSE, warning=FALSE, results="asis"}
+samplerate2d(cctb)
+```
+
+
+
+\newpage
+# Data Distribution
+## Demographic
+```{r, echo=FALSE, results="asis", warning=FALSE}
+demg.distribution(demg, c("HCM", "apache_score"))
+```
+
+
+## Physiological & Drugs
+```{r, echo=FALSE, results="asis", warning=FALSE}
+physio.distribution(cctb, item2d)
+```
+
