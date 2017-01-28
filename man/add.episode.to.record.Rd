@@ -7,9 +7,9 @@
 add.episode.to.record(rec, episode)
 }
 \arguments{
-\item{rec}{ccRecord}
+\item{rec}{ccRecord-class}
 
-\item{episode}{ccEpisode object}
+\item{episode}{ccEpisode-class}
 }
 \value{
 ccRecord object

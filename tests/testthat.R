@@ -1,5 +1,5 @@
 library(testthat)
-library(ccdata)
+library(cleanEHR)
 
 
-test_check("ccdata")
+test_check("cleanEHR")

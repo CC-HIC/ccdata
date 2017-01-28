@@ -14,6 +14,11 @@
 #' @field summary list
 #' @field base_cadence the base cadence is specified in hours
 #' @include ccRecord.R
+#' @examples
+#' rec <- ccRecord()
+#' cctable <- create.cctable(rec, freq=1)
+#' cctable <- cctable$clean()
+#' #table <- cctable$tclean 
 #' @exportClass ccTable
 ccTable <- setRefClass("ccTable", 
                             fields=c(
@@ -61,7 +66,7 @@ show = function() {
 #' @export create.cctable
 create.cctable <- function(rec, freq, conf=NULL) {
     if (is.null(conf)) 
-        conf <- ccdata:::ITEM_REF
+        conf <- ITEM_REF
     else { 
         if (is.character(conf))
             conf <- yaml.load_file(conf)

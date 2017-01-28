@@ -2,23 +2,28 @@
 % Please edit documentation in R/selectTable.R
 \name{selectTable}
 \alias{selectTable}
-\title{selectTable}
+\title{Create wide table from ccRecord}
 \usage{
 selectTable(record, items_opt = NULL, items_obg = NULL, freq,
-  item.name = NULL, return_list = FALSE)
+  return_list = FALSE)
 }
 \arguments{
 \item{record}{ccRecord}
 
-\item{items_opt}{optional items}
+\item{items_opt}{character vectors. Items (HIC code) selected in item_opt are optional items, which will be automatically 
+filled when item is missing.}
 
 \item{items_obg}{obligatory items that is obligatory; Any episode that doesn't contain
 item in this vector will be removed.}
+
+\item{freq}{numeric cadence in hour.}
+
+\item{return_list}{logical if TRUE return as a list.}
 }
 \value{
 data.table
 }
 \description{
-selectTable
+Create wide table from ccRecord
 }
 

@@ -7,6 +7,11 @@ corresponding data type.}
 \usage{
 sql.demographic.table(record, dtype = TRUE)
 }
+\arguments{
+\item{record}{ccRecord-class}
+
+\item{dtype}{logical column will be type aware, else all in character.}
+}
 \description{
 Create demographic SQL tables. The data type of each column is in its
 corresponding data type.

@@ -8,6 +8,9 @@ StdId(text)
 
 StdId(text)
 }
+\arguments{
+\item{text}{NIHC code which should be in a format like NIHR_HIC_ICU_xxxx}
+}
 \description{
 S4 class to hold standard IDs such as "NIHR_HIC_ICU_0001"
 
@@ -18,4 +21,9 @@ constructor of StdId class
 \describe{
 \item{\code{ids}}{single or multiple characters}
 }}
+\examples{
+\donttest{
+selected_tags <- StdId(c("NIHR_HIC_ICU_0001", "NIHR_HIC_ICU_0002")
+}
+}
 

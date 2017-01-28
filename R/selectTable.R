@@ -1,12 +1,16 @@
-#' selectTable
+#' Create wide table from ccRecord
+#' 
 #' @param record ccRecord
+#' @param items_opt character vectors. Items (HIC code) selected in item_opt are optional items, which will be automatically 
+#' filled when item is missing. 
 #' @param items_obg obligatory items that is obligatory; Any episode that doesn't contain
 #' item in this vector will be removed.
-#' @param items_opt optional items
+#' @param freq numeric cadence in hour. 
+#' @param return_list logical if TRUE return as a list.  
 #' @return data.table
 #' @export selectTable
 selectTable <- function(record, items_opt=NULL, items_obg=NULL, freq,
-                        item.name=NULL, return_list=FALSE) {
+                        return_list=FALSE) {
     all_items <- c(items_opt, items_obg)
     if (is.null(all_items))
         stop('both items_opt and items_obg are NULL')
@@ -40,14 +44,24 @@ selectTable <- function(record, items_opt=NULL, items_obg=NULL, freq,
     # fill is true because meta data column can be missing. 
     dt <- rbindlist(lt, fill=TRUE) 
 
+   
+    # Adding missing meta columns to keep the 2d wide consistent. 
+    code.has.meta <- names(unlist(sapply(ITEM_REF, function(x) x$NHICmetaCode)))
+    for (i in all_items) {
+        meta.code <- paste(i, "meta", sep=".")
+        if (i %in% code.has.meta & !(meta.code %in% names(dt))) {
+            dt[[meta.code]] <- rep("NA", nrow(dt))
+        }
+    }
+
     # convert data type 
     for (i in all_items)
         dt[[i]] <- suppressWarnings(.which.datatype(i)(as.character(dt[[i]])))
 
+
     return(dt)
 }
 
-#' @export itemsToDataFrame
 itemsToDataFrame <- function(ep, items, period_length, freq) {
     listmatrix <- list()
     time <- seq(0, period_length, freq)

@@ -53,4 +53,10 @@ method on a selected window period nearby the missing data.}
 
 \item{\code{reload.conf(file)}}{reload yaml configuration.}
 }}
+\examples{
+rec <- ccRecord()
+cctable <- create.cctable(rec, freq=1)
+cctable <- cctable$clean()
+#table <- cctable$tclean 
+}
 

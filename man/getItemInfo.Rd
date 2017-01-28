@@ -2,7 +2,7 @@
 % Please edit documentation in R/utilities.R
 \name{getItemInfo}
 \alias{getItemInfo}
-\title{retrieve information of the query code/item names from data.checklist}
+\title{Retrieve information of the query code/item names from data.checklist}
 \usage{
 getItemInfo(item.code)
 }
@@ -14,6 +14,10 @@ meta_code}
 a vector contains NHIC_code, dt_code, meta_code and row_in_checklist
 }
 \description{
-retrieve information of the query code/item names from data.checklist
+Retrieve information of the query code/item names from data.checklist
+}
+\examples{
+getItemInfo("Time of death on your unit")
+getItemInfo("NIHR_HIC_ICU_0001")
 }
 

@@ -48,13 +48,13 @@ total data points found in the current database, which makes in average
 
 ## Site reference
 ```{r, echo=FALSE}
-pander(site.info()[, 1:3], style="rmarkdown")
+pander(as.data.frame(site.info()[, 1:3], style="rmarkdown"))
 ```
 
 ## The original XML files and parse information
 ```{r, echo=FALSE, results="asis"}
 fs <- file.summary(ccd)
-pander(fs[, c("File", "Number of Episode", "Sites"), with=F])
+pander(as.data.frame(fs[, c("File", "Number of Episode", "Sites"), with=F]))
 ```
 
 ```{r fig.width=15, fig.height=10, echo=FALSE}

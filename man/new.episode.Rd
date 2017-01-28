@@ -21,4 +21,10 @@ create a new ccEpisode object by given the episode data as a
 list. The list should be organised in data items and indexed with NIHC code,
 e.g. NIHR_HIC_ICU_0108.
 }
+\examples{
+eps <- list()
+eps[["NIHR_HIC_ICU_0018"]] <- data.frame(time=seq(10), rep(70, 10))
+new.episode(eps)
+
+}
 

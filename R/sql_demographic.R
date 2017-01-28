@@ -1,5 +1,8 @@
 #' Create demographic SQL tables. The data type of each column is in its
 #' corresponding data type.
+#'
+#' @param record ccRecord-class
+#' @param dtype logical column will be type aware, else all in character. 
 #' @export sql.demographic.table
 sql.demographic.table <- function(record, dtype=TRUE) {
     env <- environment()

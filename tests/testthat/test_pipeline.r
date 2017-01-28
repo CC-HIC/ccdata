@@ -69,11 +69,11 @@ test_that("Discover parsed XML files and new files", {
 #})
 
 #test_that("update the database", {
-#    alld <- update.database(xml.path=".temp/XML", restart=T)
+#    alld <- update_database(xml.path=".temp/XML", restart=T)
 #    expect_true("alldata.RData" %in% dir(".temp/XML/.database"))
 #    expect_equal(alld@nepisodes, 4)
 #
-#    alld <- update.database(xml.path=".temp/XML", restart=F)
+#    alld <- update_database(xml.path=".temp/XML", restart=F)
 #    expect_equal(alld@nepisodes, 4)
 #
 #    load(".temp/XML/.database/alldata.RData")

@@ -1,9 +1,10 @@
 #' find the unique spell ID.
 #'
-#' @param record ccRecord
+#' @param rec  ccRecord-class
+#' @param duration integer hours 
 #' @return data.table contains spell id.
-#' @export unique.spell
-unique.spell <- function(rec, duration=2) {
+#' @export unique_spell
+unique_spell <- function(rec, duration=2) {
     tb <- rec@infotb
     short.time.group <- function(sd) {
         zeroday <- 0
@@ -24,10 +25,16 @@ unique.spell <- function(rec, duration=2) {
     return(tb)
 }
 
+#' Assign unique spell ID to the demographic table 
+#'
+#' @param rec ccRecord
+#' @param duration the maximum hours of transition period
+#' @return data.table demographic table with spell ID in column spell
+#' 
 #' @export demographic.patient.spell
 demographic.patient.spell <- function(rec, duration=2) {
     dmg <- sql.demographic.table(rec)
-    us <- unique.spell(rec, duration)
+    us <- unique_spell(rec, duration)
     us <- data.table(index=us$index, pid=us$pid, spell=us$spell)
     dmg <- merge(dmg, us, by=c("index"))
     return(dmg)

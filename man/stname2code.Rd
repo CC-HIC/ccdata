@@ -2,11 +2,17 @@
 % Please edit documentation in R/stdid.R
 \name{stname2code}
 \alias{stname2code}
-\title{convert short names to NHIC code}
+\title{Convert short names to NHIC codes}
 \usage{
 stname2code(stname)
 }
+\arguments{
+\item{stname}{character short names of data item h_rate}
+}
+\value{
+NIHC code character such as NIHR_HIC_ICU_0108
+}
 \description{
-convert short names to NHIC code
+Convert short names to NHIC codes
 }
 

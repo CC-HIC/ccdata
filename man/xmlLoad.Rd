@@ -6,8 +6,11 @@
 \usage{
 xmlLoad(file)
 }
+\arguments{
+\item{file}{character string. The path of the XML file.}
+}
 \value{
-the root of the xml data
+the root of the xml data.
 }
 \description{
 load xml clinical data

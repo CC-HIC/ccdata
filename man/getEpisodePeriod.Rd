@@ -2,17 +2,19 @@
 % Please edit documentation in R/reallocateTime.R
 \name{getEpisodePeriod}
 \alias{getEpisodePeriod}
-\title{getEpisodePeriod}
+\title{Get the length of stay based on the first and the last data point.}
 \usage{
 getEpisodePeriod(e, unit = "hours")
 }
 \arguments{
-\item{e}{episode}
+\item{e}{ccEpisode object.}
+
+\item{unit}{character string.  Units in which the results are desired. Can be abbreviated.}
 }
 \value{
-period_length
+length of stay
 }
 \description{
-getEpisodePeriod
+Get the length of stay based on the first and the last data point.
 }
 

@@ -19,9 +19,9 @@ Imports:
     XML,
     yaml,
     Rcpp,
-    methods, 
-    knitr, 
-    ggplot2, 
+    methods,
+    knitr,
+    ggplot2,
     pander
 RoxygenNote: 5.0.1
 Collate:
@@ -40,6 +40,7 @@ Collate:
     'selectTable.R'
     'sql_demographic.R'
     'stdid.R'
+    'summary.R'
     'unique.spell.R'
     'utilities.R'
     'xml2ccdata.R'

@@ -55,3 +55,27 @@ create2dclean <- function(record, config, freq=1, nchunks=1) {
     }
     return(tbclean_all)
 }
+
+#' @export 
+create2dclean2 <- function(record, config, freq=1, nchunks=1) {
+    if (is.character(config))
+        config <- yaml.load_file(config)
+
+    stopifnot(nchunks > 0 & nchunks < record@nepisodes)
+    
+    if (nchunks == 1)
+        return(.create2dclean(record, config, freq)$tclean)
+
+    op.seq <- round(seq(1, record@nepisodes + 1, length.out=nchunks + 1))
+
+    tclean <- list()
+
+    for (i in seq(length(op.seq) - 1)) {
+        rc <- record[seq(op.seq[i], op.seq[i+1] - 1)]
+        tclean[[i]] <- .create2dclean(rc, config, freq)$tclean
+        gc()
+    }
+    
+    tclean <- rbindlist(tclean, fill=TRUE)
+    return(tclean)
+}

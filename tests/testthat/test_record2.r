@@ -36,5 +36,5 @@ test_that("test xml2Data2", {
 
 
 test_that("testing unique spell", {
-    us <- unique.spell(ccd)
+    us <- unique_spell(ccd)
 })

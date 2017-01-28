@@ -2,11 +2,14 @@
 % Please edit documentation in R/stdid.R
 \name{as.number}
 \alias{as.number}
-\title{convert standard ids to numbers (character) which can be used for indexing.}
+\title{Convert standard IDs to numbers (character) which can be used for indexing.}
 \usage{
 as.number(obj)
 }
+\arguments{
+\item{obj}{a StdId object.}
+}
 \description{
-convert standard ids to numbers (character) which can be used for indexing.
+Convert standard IDs to numbers (character) which can be used for indexing.
 }
 

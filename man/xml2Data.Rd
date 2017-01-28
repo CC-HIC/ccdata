@@ -2,18 +2,30 @@
 % Please edit documentation in R/xml2ccdata.R
 \name{xml2Data}
 \alias{xml2Data}
-\title{convert xml data to ccdata format - [ready for retire]}
+\title{Convert the XML file to ccRecord}
 \usage{
 xml2Data(file, select.episode = NULL, quiet = TRUE, xml = NULL,
   file_origin = "NA", parse_time = Sys.time())
 }
 \arguments{
-\item{file}{xml file name}
+\item{file}{character string. The path of XML file.}
+
+\item{select.episode}{integer vector. Load only a selected number of episodes. 
+It is NULL by default which loads all the episodes in a file.}
+
+\item{quiet}{logical. Switch on/off the progress bar.}
+
+\item{xml}{XML object. Usually not needed.}
+
+\item{file_origin}{character string. The XML file name. The file name will be 
+extracted automatically while argument xml is NULL.}
+
+\item{parse_time}{POSIXct. By default is the time of the execution of this function.}
 }
 \value{
-ccdata
+ccRecord-class
 }
 \description{
-convert xml data to ccdata format - [ready for retire]
+Convert the XML file to ccRecord. For more details, see ccRecord-class.
 }
 

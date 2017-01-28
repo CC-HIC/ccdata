@@ -1,12 +1,4 @@
-#!/bin/bash 
-
-if [[ $(sed --help 2>&1 | grep GNU) ]]; then
-  sed_i () { sed -i "$@"; }
-  gnused=1
-else
-  sed_i () { sed -i '' "$@"; }
-  gnused=0
-fi
+#!/bin/bash -xe
 
 if [[ $# < 2 ]]
 then
@@ -19,28 +11,22 @@ default_ext='partxml'
 # <d:xx> or <xx> file?
 dchar="d:"
 dchar_exist=$(head -2 $1 | grep -c "<${dchar}")
-if [ ${dchar_exist} -eq 0 ]
-then
-    dchar=""
-fi
+[ ${dchar_exist} -eq 0 ] && dchar=""
 
 subject="${dchar}subject"
 
 # Add lines before and after each subject starts
-sed -e  's|<'"${subject}"'>|\n<'"${subject}"'>\n|' ${1} > ${1}.tmp
+sed -i.orig -e  's|<'"${subject}"'>|\n<'"${subject}"'>\n|' ${1}
 
 # change the end subject for something different - <cut_here>
 # so it is not counted in the awk below.
-if [[ $gnused == 1 ]]; then
-  echo "gnu here"
-  sed -e 's|</'"${subject}"'>|<cut_here>\n|' ${1} > ${1}.tmp
-else
-  sed -e 's|</'"${subject}"'>|<cut_here>\'$'\n|' ${1} > ${1}.tmp
-fi
+  sed -i -e 's|</'"${subject}"'>|<cut_here>\n|' ${1}
 
+# Remove previous files
 if [[ -e ${1}_0.${default_ext} ]]; then
   rm ${1}*${default_ext}
 fi
+
 # Break the file into chunks where <${subject}> occurs.
 # Each time <subject> is found, delim will increase
 #   if delim/maxpatients (2nd argument) == 1 then
@@ -51,7 +37,7 @@ awk 'BEGIN {delim=-1} \
          /\<'"${subject}"'\>/ { delim++ } \
                   {file = sprintf("'${1}'_%s.'${default_ext}'", int(delim/'${2}'));\
                    print >> file; } \
-     END { print "'${1}' has ", delim+1, "subjects"}' ${1}.tmp
+     END { print "'${1}' has ", delim+1, "subjects"}' ${1}
 
 
 # extract the header of the file with its meta.
@@ -60,10 +46,10 @@ awk 'BEGIN {delim=-1} \
 # - remove all no printing characters - it seems there's one making the insertion to
 #   fail afterwards.
 # head won't work because some files run over multiple lines
-# firstlines=$(sed -n '1,/<'"${subject}"'>/p' ${1}_0.${default_ext} | \
-#                     sed 's/<'"${subject}"'>//' | tr -dc '[:print:]')
-firstlines=$(sed -n 's/\(.*\)<'"${subject}"'>/\1/p' ${1}_0.${default_ext} | tr -dc '[:print:]')
+firstlines=$(sed -n '1,/<'"${subject}"'>/p' ${1}_0.${default_ext} | \
+                    sed 's/<'"${subject}"'>//' | tr -dc '[:print:]')
 
+# TODO: to extract the footer automatically.
 lastline="</${dchar}data></${dchar}context></${dchar}document>"
 nfiles=$(ls "${1}"_* | wc -l)
 
@@ -89,4 +75,4 @@ do
 done
 
 # Remove the temporary file used
-rm ${1}.tmp
+mv ${1}.orig ${1}

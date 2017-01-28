@@ -8,6 +8,8 @@ getXmlepisode(xml.root, id)
 }
 \arguments{
 \item{xml.root}{root of xml data returned by xmlLoad()}
+
+\item{id}{integer}
 }
 \description{
 get the episode data from xml

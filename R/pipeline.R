@@ -24,10 +24,11 @@ find.new.xml.file <- function(xml.path) {
 #' Update the RData database
 #'
 #' Inject episode data from the newly added XML files to the RData database. 
-#' @param xml.path
-#' @param mc.cores 
+#' @param xml.path the path of the folder of which contains the XML files. 
+#' @param mc.cores number of processors to be applied for parallelisation.
+#' @param quiet logical switch on/off of the progress bar. 
 #' @return ccRecord object
-update.new.xml <- function(xml.path, mc.cores=4, quiet=FALSE) {
+parse.new.xml <- function(xml.path, mc.cores=4, quiet=FALSE) {
     files.to.parse <- find.new.xml.file(xml.path)
 
     db.collection <- mclapply(files.to.parse, 
@@ -53,9 +54,14 @@ update.new.xml <- function(xml.path, mc.cores=4, quiet=FALSE) {
 #' Parse critical care data from XML files and inject them into the RData
 #' database. 
 #' 
-#' @export update.database 
-update.database <- function(xml.path, restart=FALSE, splitxml=FALSE, 
-                            mc.cores=4, quiet=FALSE) {
+#' @param xml.path character the path of the folder of which contains the XML files. 
+#' @param mc.cores integer number of processors to be applied for parallelisation. 
+#' @param restart logical purge the previous database and restart parsing for all the XML files presented. 
+#' @param splitxml logical break down the XML files into chuncks. (Do it when the file is too big)
+#' @param quiet logical show the progress bar if true
+#' @export update_database 
+update_database <- function(xml.path, restart=FALSE, splitxml=FALSE, 
+                            mc.cores=4, quiet=FALSE, dt=TRUE) {
     if (restart)
         unlink('.database')
     if (splitxml) {
@@ -66,25 +72,54 @@ update.database <- function(xml.path, restart=FALSE, splitxml=FALSE,
         xml.path2 <- xml.path
 
     alldata.loc <- paste(xml.path, "alldata.RData", paste="/")
-    update.new.xml(xml.path2, mc.cores, quiet)
+    parse.new.xml(xml.path2, mc.cores, quiet)
 
 
     alldata <- ccRecord()
     files <- dir(paste(xml.path, ".database", sep="/"), 
                  pattern="[^alldata.RData]", 
-                 full.name=TRUE)
+                 full.names=TRUE)
     
     for (i in files) {
         load(i)
         alldata <- alldata + db
     }
 
-    save(alldata, file=paste(xml.path, ".database", "alldata.RData", sep="/"))
+    if (dt) {
+        ccdt <- deltaTime(alldata)
+        save(list=c("alldata", "ccdt"), file=paste(xml.path, ".database", "alldata.RData", sep="/"))
+    }
+    else 
+        save(alldata, file=paste(xml.path, ".database", "alldata.RData", sep="/"))
     
     invisible(alldata)
 }
 
+parse.big.xml <- function(xml.path, mc.cores=4, quiet=TRUE, tmpd="/tmp", maxsize=3) {
 
+    fparse<- paste(xml.path, find.new.xml.file(xml.path), sep="/")
+    fbig <- fparse[file.info(fparse)$size/1e9 > maxsize]
+    fbig_nopath <- sapply(strsplit(fbig, "/"), function(x) x[length(x)])
+
+    if (length(fbig > 0)) {
+        cat("Detected big files ... \n")
+
+        tmpd <- paste(tmpd, "ccd_big_files", sep="/")
+
+        if (dir.exists(tmpd)) unlink(tmpd, recursive=T)
+        dir.create(tmpd)
+#        file.copy(fbig, tmpd)
+#        stopifnot(all(fbig_nopath == dir(tmpd)))
+#        update_database(tmpd, mc.cores=mc.cores, quiet=quiet)
+
+        cmd <- system.file("pipeline/break_into.sh", package="ccdata")
+        print(cmd)
+        for (i in fbig) system2(cmd, c(i, 3))
+    
+        for(i in fbig_nopath) cat(" [+] ", i, "\n", sep="")
+    }
+
+}
 break.down.xml <- function(xml.path) {
     unlink(paste(xml.path, ".partxml", sep="/"), recursive=T)
     partxml.dir <- paste(xml.path, ".partxml", sep="/")
@@ -104,7 +139,7 @@ break.down.xml <- function(xml.path) {
 
     for (f in newfile) {
         system2(cmd, c(f, 100))
-        partxml.file <- list.files(xml.path, pattern=".partxml", full.name=T)
+        partxml.file <- list.files(xml.path, pattern=".partxml", full.names=T)
         file.copy(partxml.file, partxml.dir) 
         file.remove(partxml.file)
     }

@@ -1,4 +1,5 @@
-#' Create the data quality report 
+#' Create the data quality report
+#'
 #' Create a detailed data quality report, including file summary, site 
 #' summary, data completeness, and density plot. The result can be found 
 #' in {work_dir}/report/data_quality_report.{pdf}/{md}. Using this function, 
@@ -10,28 +11,31 @@
 #' @param pdf logical create the pdf version of the DQ report, 
 #' otherwise stay in markdown format
 #' @export data.quality.report
+#' @examples 
+#' \dontrun{data.quality.report(ccd, c("Q70", "C90"))}
 #' @import knitr
 #' @import pander
 #' @import ggplot2
-data.quality.report <- function(ccd, site=NULL, pdf=T) {
-    if (is.null(site)) {
-        dbfull <<- "YES"
-    }
-    else {
-        dbfull <<- "NO"
-        ccd <- ccd[site]
-    }
+data.quality.report <- function(ccd, site=NULL, file=NULL, pdf=T, out="report") {
+    if (is.null(site) & is.null(file))  dbfull <- "YES"
+    else dbfull <- "NO"
+    
+    stopifnot(!(!is.null(site) & !is.null(file)))
+    if (!is.null(site)) ccd <- ccd[site]
+    if (!is.null(file)) ccd <- ccRecord_subset_files(ccd, file)
+    
  
-    if (dir.exists("report")) {
-        unlink("report", recursive=T)
+    if (dir.exists(out)) {
+        unlink(out, recursive=T)
     }
+    dir.create(out)
 
     wd <- getwd()
     rptpath <- paste(path.package('ccdata'), "report", sep="/")
-    file.copy(rptpath, ".", recursive=T)
+    file.copy(dir(rptpath, full.names=T), out, recursive=T)
 
     write.report <- function() {
-        setwd('report')
+        setwd(out)
         dqpath <- "data_quality_report.Rmd"
         headerpath <- "listings-setup.tex"
         tpltpath <- "report.latex"
@@ -60,6 +64,46 @@ data.quality.report <- function(ccd, site=NULL, pdf=T) {
 }
 
 
+#' Create the data quality report
+#'
+#' Create a detailed data quality report, including file summary, site 
+#' summary, data completeness, and density plot. The result can be found 
+#' in {path}/report/data_quality_report.{pdf}/{md}. Using this function, 
+#' one can also create a site/trust specified report, see the argument "site". 
+#' You need to make sure that you have the right to write into the {work_dir}. 
+#' 
+#' @param ccd ccRecord 
+#' @param site a vector of the site ids for the site specified report. 
+#' @param pdf logical create the pdf version of the DQ report, 
+#' otherwise stay in markdown format
+#' @param path report export path 
+#' @examples 
+#' \dontrun{data.quality.report(ccd, c("Q70", "C90"))}
+#' @export data.quality.report.brc 
+data.quality.report.brc <- function(ccd, pdf=T, brc=NULL, path=NULL) {
+    if (!is.null(path))
+        dir.create(path)
+
+    if (is.null(brc)) brc <- c("Cambridge", "GSTT", "Imperial", "Oxford", "UCLH")
+    
+    xmlfiles <- unique(ccd@infotb$parse_file)
+
+    data.quality.report(ccd, pdf=pdf, out=paste(path, "report_full_db", sep="/"))
+
+    for (i in brc) {
+        fs <- xmlfiles[grepl(i, xmlfiles)]
+        if (length(fs) > 0)
+            data.quality.report(ccd, file=fs, pdf=pdf, file=fs, 
+                                out=paste(path, paste0("report_", i), sep="/"))
+        else
+            cat("No XML files from trust ", i, " has been found.", '\n')
+    }
+}
+
+#' Produce a file summary table
+#' 
+#' @param ccd ccRecord-class
+#' @return data.table
 #' @export file.summary
 file.summary <- function(ccd) {
     infotb <- ccd@infotb
@@ -71,10 +115,13 @@ file.summary <- function(ccd) {
     return(file.summary)
 }
 
+#' Plot the XML duration in terms of sites. 
+#'
+#' @param ccd ccRecord-class
 #' @export xml.site.duration.plot
 xml.site.duration.plot <- function(ccd) {
     tb <- copy(ccd@infotb)
-    tb <- tb[, list(minadm=min(t_admission, na.rm=T), 
+    tb <- tb[, list("minadm"=min(t_admission, na.rm=T), 
               maxadm=max(t_admission, na.rm=T),
               mindis=min(t_discharge, na.rm=T),
               maxdis=max(t_discharge, na.rm=T)), by=site_id]
@@ -82,7 +129,7 @@ xml.site.duration.plot <- function(ccd) {
           function(x) paste(x, collapse="-"))
     tb[, site_name:=site_name]
     
-    ggplot(tb, aes(x=minadm, y=site_name)) +
+    ggplot(tb, aes_string(x="minadm", y="site_name")) +
         geom_segment(aes(xend=maxdis, yend=site_name), color="gray", size=10) +
         annotate("text", x=tb$minadm+(tb$maxdis-tb$minadm)/2, 
                  y=tb$site_name, label=tb$site_name, size=7) + 
@@ -92,7 +139,9 @@ xml.site.duration.plot <- function(ccd) {
         xlab("") + ylab("")
 }
 
-
+#' plot the duration of XML files. 
+#'
+#' @param ccd ccRecord-class
 #' @export xml.file.duration.plot
 xml.file.duration.plot <- function(ccd) {
     tb <- copy(ccd@infotb)
@@ -117,7 +166,11 @@ txt.color <- function(x, color) {
     paste("\\colorbox{", color, "}{", x, "}", sep="")
 }
 
-
+#' Create a demographic completeness table (in pander table)
+#' 
+#' @param demg data.table the demographic data table created by sql.demographic.table()
+#' @param names short name of selected items
+#' @param return.data logical return the table if TRUE
 #' @export demographic.data.completeness
 demographic.data.completeness <- function(demg, names=NULL, return.data=FALSE) {
     site.reject <- function(demg, name, ref) {
@@ -137,12 +190,12 @@ demographic.data.completeness <- function(demg, names=NULL, return.data=FALSE) {
     }
 
     path <- find.package("ccdata")
-    acpt <- unlist(yaml.load_file(paste(path, "data", "accept_completeness.yaml", 
-                                             sep=.Platform$file.sep)))
+    acpt <- unlist(yaml.load_file(system.file("conf/accept_completeness.yaml", 
+                                              package="ccdata")))
 
  
     demg <- copy(demg)
-    demg[, index:=NULL]
+    demg[, "index":=NULL]
     if (!is.null(names))
         demg <- demg[, names, with=F]
 
@@ -166,21 +219,27 @@ demographic.data.completeness <- function(demg, names=NULL, return.data=FALSE) {
     ind <- vals < ref & ref != 0
     cmplt[, 1][ind] <- txt.color(vals[ind], "ccdred")
 
-    
-
-   
-    rownames(cmplt) <- stname2longname(rownames(cmplt))
+    hiccode <- stname2code(rownames(cmplt))
+    lname <- stname2longname(rownames(cmplt))
+    rownames(cmplt) <- lname 
     cmplt$ref <- as.character(ref)
     cmplt$ref[cmplt$ref=="0"] <- ""
     cmplt$reject <- reject
 
-    names(cmplt) <- c("Completeness %", "Accept Completeness %", "Rejected Sites (Site: %)")
+    cmplt <- cbind(cmplt, as.number(StdId(hiccode)))
+
+    names(cmplt) <- c("Completeness %", "Accept Completeness %", 
+                      "Rejected Sites (Site: %)", "NHIC Code (NIHR_HIC_ICU_xxxx)")
+    
     if (return.data)
         return(cmplt)
-    pander(cmplt, style="rmarkdown", justify = c('left', 'center', "center",
-                                                 "center"))
+    pander(as.data.frame(cmplt), style="rmarkdown", justify = c('left', 'center', "center",
+                                                 "center", 'left'))
 }
 
+#' Produce a pander table of sample rate of longitudinal data.
+#'
+#' @param cctb ccTable-class, see create.cctable().  
 #' @export samplerate2d
 samplerate2d <- function(cctb) {
     sample.rate.table <- data.frame(fix.empty.names=T)
@@ -193,17 +252,22 @@ samplerate2d <- function(cctb) {
         sample.rate.table <- 
             rbind(sample.rate.table, 
                   data.frame("item"=stname2longname(code2stname(i)), 
+                             "hiccode"=as.number(StdId(i)),
                              "sr"=sr))
     }
     rownames(sample.rate.table) <- NULL
-    names(sample.rate.table) <- c("Item", "Sample Period (hour)")
+    
+    names(sample.rate.table) <- c("Item", "NHIC Code (NIHR_HIC_ICU_xxxx)", 
+                                  "Sample Period (hour)")
 
-    pander(sample.rate.table, style="rmarkdown")
+    pander(as.data.frame(sample.rate.table), style="rmarkdown")
 }
 
 
 
-#' 
+#' Return total data point of the ccRecord object. 
+#'
+#' @param ccd ccRecord-class
 #' @export total.data.point
 total.data.point <- function(ccd) {
     dp.physio <- 
@@ -217,6 +281,12 @@ total.data.point <- function(ccd) {
     return(sum(dp.physio, dp.demg))
 }
 
+#' Produce the item specified table one. 
+#'
+#' @param demg ccTable-clas demographic table created by sql.demographic.table()
+#' @param names character string. Short names of data items, e.g. h_rate. 
+#' @param return.data logical, FALSE: printing the pander table, TRUE: return the table but not print out the pander table. 
+#' @return if return.data is TRUE, return data.table
 #' @export table1
 table1 <- function(demg, names, return.data=FALSE) {
     panderOptions('knitr.auto.asis', FALSE)
@@ -224,11 +294,12 @@ table1 <- function(demg, names, return.data=FALSE) {
     if (!return.data)
         cat(paste("\n## Table ONE\n"))
     table1.item <- function(demg, name) {
-        ref <- ccdata:::ITEM_REF[[stname2code(name)]]
+        ref <- ITEM_REF[[stname2code(name)]]
+        hicnum <- as.number(StdId(stname2code(name)))
         if (is.null(ref))
             stop("The short name cannot be found in ITEM_REF.")
         if (!return.data)
-            cat(paste("\n###", ref$dataItem, "\n"))
+            cat(paste("\n###", ref$dataItem," - ", hicnum, "\n"))
         if (ref$Datatype %in% c("text", "list", "Logical", "list / Logical")) {
             stopifnot(!is.null(ref$category))
             nmref <- sapply(ref$category$levels, function(x) x)
@@ -248,7 +319,7 @@ table1 <- function(demg, names, return.data=FALSE) {
         if (return.data)
             return(tb)
         else 
-            pander(tb, style="rmarkdown")
+            pander(as.data.frame(tb), style="rmarkdown")
     }
 
     for (i in names)
@@ -262,14 +333,17 @@ table1 <- function(demg, names, return.data=FALSE) {
 #' Create a plot of the distribution of numerical demographic data.
 #' 
 #' @param demg ccRecord or demographic table created by sql.demographic.table()
-#' @param names a vector of short names of numerical demographic data. 
+#' @param names character vector of short names of numerical demographic data. 
+#' @examples
+#' \dontrun{tdemg.distribution(ccd, "HCM")}
 #' @export demg.distribution
 demg.distribution <- function(demg, names) {
     if (class(demg) == "ccRecord")
         demg <- sql.demographic.table(demg)
     for (nm in names) {
-        ref <- ccdata:::ITEM_REF[[stname2code(nm)]]
-        cat(paste("\n\n###", ref$dataItem, "\n"))
+        ref <- ITEM_REF[[stname2code(nm)]]
+        hicnum <- as.number(StdId(stname2code(nm)))
+        cat(paste("\n\n###", ref$dataItem, " - ", hicnum, "\n"))
         gg <- ggplot(demg, aes_string(nm)) + geom_density(fill="lightsteelblue3") + 
             facet_wrap(~ICNNO, scales="free")
         print(gg)
@@ -277,12 +351,16 @@ demg.distribution <- function(demg, names) {
     }
 }
 
-
+#' Plot the physiological data distribution.
+#'
+#' @param cctb ccTable-class, see create.cctable().  
+#' @param names character vector of short names of numerical demographic data. 
 #' @export physio.distribution
 physio.distribution <- function(cctb, names) {
     for (nm in names) {
-        ref <- ccdata:::ITEM_REF[[stname2code(nm)]]
-        cat(paste("\n\n###", ref$dataItem, "\n"))
+        ref <- ITEM_REF[[stname2code(nm)]]
+        hicnum <- as.number(StdId(stname2code(nm)))
+        cat(paste("\n\n###", ref$dataItem, "-", hicnum, "\n"))
         gg <- ggplot(cctb, aes_string(ref$NHICcode)) + geom_density(fill="lightsteelblue3") + 
             facet_wrap(~site)
         print(gg)

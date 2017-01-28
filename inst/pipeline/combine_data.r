@@ -1,6 +1,6 @@
 #!/usr/bin/Rscript
 
-library(ccdata)
+library(cleanEHR)
 
 args = commandArgs(trailingOnly=TRUE)
 

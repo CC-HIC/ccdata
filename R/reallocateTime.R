@@ -1,6 +1,5 @@
 #' @importFrom Rcpp evalCpp
 #' @useDynLib ccdata 
-#' @export reallocateTime
 reallocateTime <- function(d, t_discharge, frequency) {
     d_ <- d
     stopifnot(any(names(d) == "time"))
@@ -33,9 +32,11 @@ findMaxTime <- function(episode) {
 }
 
 
-#' getEpisodePeriod
-#' @param e episode
-#' @return period_length
+#' Get the length of stay based on the first and the last data point. 
+#' 
+#' @param e ccEpisode object.
+#' @param unit character string.  Units in which the results are desired. Can be abbreviated.
+#' @return length of stay
 #' @export getEpisodePeriod
 getEpisodePeriod <- function (e, unit="hours") {
     # pseudo delta period, see addPseudoTime()

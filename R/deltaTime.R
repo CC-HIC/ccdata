@@ -1,4 +1,3 @@
-#' @export find.episode.time
 find.episode.time <- function(episode) {
     time <- unlist(lapply(episode@data, 
                           function(d) {

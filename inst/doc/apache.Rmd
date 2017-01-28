@@ -1,0 +1,156 @@
+---
+title: "A brief tour of cleanEHR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+
+---
+
+
+### Load data 
+Usually a RData file which stores all the dataset will be given. A sample RData
+can be found in `/doc/sample_ccd.RData`.
+```{r}
+library(cleanEHR)
+data.path <- paste0(find.package("cleanEHR"), "/doc/sample_ccd.RData")
+load(data.path)
+```
+### Data overview
+You can have a quick overview of the data by checking `infotb`. In the sample
+dataset, sensitive variables such as NHS number and admission time have been
+removed or twisted. 
+```{r}
+library(pander)
+print(head(ccd@infotb))
+```
+The basic entry of the data is episode which indicates an admission of a site.
+Using `episode_id` and `site_id` can locate a unique admission entry.  `pid` is
+a unique patient identifier. 
+
+```{r}
+# quickly check how many episodes are there in the dataset.
+ccd@nepisodes
+```
+
+There are 263 fields which covers patient demographics, physiology, laboratory,
+and medication information. Each field has 2 labels, NHIC code and short name.
+There is a function `lookup.items()` to look up the fields you need.
+`lookup.items()` function is case insensitive and allows fuzzy search.
+```
+# searching for heart rate
+lookup.items('heart') # fuzzy search
+
++-------------------+--------------+--------------+--------+-------------+
+|     NHIC.Code     |  Short.Name  |  Long.Name   |  Unit  |  Data.type  |
++===================+==============+==============+========+=============+
+| NIHR_HIC_ICU_0108 |    h_rate    |  Heart rate  |  bpm   |   numeric   |
++-------------------+--------------+--------------+--------+-------------+
+| NIHR_HIC_ICU_0109 |   h_rhythm   | Heart rhythm |  N/A   |    list     |
++-------------------+--------------+--------------+--------+-------------+
+
+```
+
+### Inspect individual episode 
+```{r, fig.width=10, fig.height=11, out.width='700px', results='hide', message=FALSE, warning=FALSE}
+# check the heart rate, bilirubin, fluid balance, and drugs of episode_id = 7. 
+# NOTE: due to anonymisation reason, some episodes data cannot be displayed
+# properly. 
+episode.graph(ccd, 7, c("h_rate",  "bilirubin", "fluid_balance_d"))
+```
+
+## Non-longitudinal Data 
+`sql.demographic.table()` can generate a `data.table` that contains all the
+non-longitudinal variables. A demonstration of how to do some work on a subset
+of data.  
+```{r, fig.width=10, fig.height=6, out.width='700px', results='hide', message=FALSE, warning=FALSE}
+# contains all the 1D fields i.e. non-longitudinal
+tb1 <- sql.demographic.table(ccd)
+
+# filter out all dead patient. (All patients are dead in the dataset.)
+tb1 <- tb1[DIS=="D"]
+
+# subset variables we want (ARSD = Advanced respiratory support days,
+# apache_prob = APACHE II probability)
+tb <- tb1[, c("SEX", "ARSD", "apache_prob"), with=F]
+tb <- tb[!is.na(apache_prob)]
+
+# plot
+library(ggplot2)
+ggplot(tb, aes(x=apache_prob, y=ARSD, color=SEX)) + geom_point()
+
+```
+
+## Longitudinal data 
+To deal with longitudinal data, we need to first to transform it into a long
+table format. 
+
+### Create a `cctable`
+```{r}
+# To prepare a YAML configuration file like this. You write the following text
+# in a YAML file. 
+conf <- "
+NIHR_HIC_ICU_0108:
+  shortName: hrate
+NIHR_HIC_ICU_0112:
+  shortName: bp_sys_a
+  dataItem: Systolic Arterial blood pressure - Art BPSystolic Arterial blood pressure
+NIHR_HIC_ICU_0093:
+   shortName: sex
+"
+library(yaml)
+tb <- create.cctable(ccd, yaml.load(conf), freq=1)
+
+# a lazy way to do that. 
+tb <- create.cctable(ccd, list(NIHR_HIC_ICU_0108=list(), 
+                         NIHR_HIC_ICU_0112=list(), 
+                         NIHR_HIC_ICU_0093=list()), 
+                     freq=1)
+print(tb$tclean)
+```
+
+### Manipulate on `cctable`
+* Get the mean heart rate of each patient. 
+```{r}
+tb$tclean[, mean(NIHR_HIC_ICU_0108, na.rm=T), by=c("site", "episode_id")]
+```
+
+
+### Data cleaning
+To clean the data, one needs to write the specification in the YAML
+configuration file. 
+
+```{r, fig.width=12, fig.height=12, out.width='700px', results='hide', message=FALSE, warning=FALSE}
+conf <-"
+NIHR_HIC_ICU_0108:
+  shortName: hrate
+  dataItem: Heart rate
+  distribution: normal
+  decimal_places: 0
+  range:
+    labels:
+      red: (0, 300)
+      amber: (11, 150)
+    apply: drop_entry
+  missingness: # remove episode if missingness is higher than 70% in any 24 hours interval 
+    labels:
+      yellow: 24
+    accept_2d:
+      yellow: 70 
+    apply: drop_episode
+"
+
+ctb <- create.cctable(ccd, yaml.load(conf), freq=1)
+ctb$filter.ranges("amber") # apply range filters
+ctb$filter.missingness()
+ctb$apply.filters()
+
+cptb <- rbind(cbind(ctb$torigin, data="origin"), 
+              cbind(ctb$tclean, data="clean"))
+
+
+ggplot(cptb, aes(x=time, y=NIHR_HIC_ICU_0108, color=data)) + 
+  geom_point(size=1.5) + facet_wrap(~episode_id, scales="free_x")
+
+```

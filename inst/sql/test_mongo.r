@@ -1,4 +1,4 @@
-library(ccdata)
+library(cleanEHR)
 library(rmongodb)
 library(assertthat)
 mongo <- mongo.create()

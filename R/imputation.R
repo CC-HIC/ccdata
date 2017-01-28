@@ -1,13 +1,5 @@
 #' @include ccTable.R
 
-#' @title Numeric vector interpolation 
-#' @details Performing interpolation methods on a given window which is
-#' specified by lead and lag.
-#' @param v vector
-#' @param lead number of forward element from the missing value.
-#' @param lag number of element backward from the missing value.
-#' @param FUN the interpolation function.
-#' @return vector 
 interpolateVec <- function(v, lead, lag, FUN="mean", ...) {
     v <- suppressWarnings(as.numeric(as.character(v)))
     na.ind <- which(is.na(v))

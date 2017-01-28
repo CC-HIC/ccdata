@@ -2,10 +2,7 @@
 % Please edit documentation in R/stdid.R
 \name{which.classification}
 \alias{which.classification}
-\title{Identify the classification - classification1 of a given item code or short
-name. Classification1 has 5 labels: 
-[1] "Demographic", [2] "Physiology" 
-[3] "Drugs" [4] "Nursing_other" [5] "Laboratory"}
+\title{Identify the classification - classification1}
 \usage{
 which.classification(item_name)
 }
@@ -16,7 +13,7 @@ which.classification(item_name)
 character the item classification
 }
 \description{
-Identify the classification - classification1 of a given item code or short
+Identify the classification of a given item code or short
 name. Classification1 has 5 labels: 
 [1] "Demographic", [2] "Physiology" 
 [3] "Drugs" [4] "Nursing_other" [5] "Laboratory"

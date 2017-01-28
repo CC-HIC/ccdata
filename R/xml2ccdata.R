@@ -13,8 +13,6 @@ make_equal_length <- function(lt) {
 }
 
 
-#' Note: it rules out any time data with missing values.
-#' @export xmlEpisodeToList
 xmlEpisodeToList <- function(episode_node) {
     traverseNode <- function(node) {
         if (is.null(node)) {
@@ -161,8 +159,9 @@ xmlEpisodeToList <- function(episode_node) {
 
 
 #' load xml clinical data
-#' @return the root of the xml data
-#' @export xmlLoad
+#'
+#' @param file character string. The path of the XML file.
+#' @return the root of the xml data. 
 xmlLoad <- function(file) {
     file.parse <- xmlParse(file)
     xml.root <- xmlRoot(file.parse)
@@ -170,18 +169,19 @@ xmlLoad <- function(file) {
 }
 
 #' get the episode data from xml 
+#'
 #' @param xml.root root of xml data returned by xmlLoad()
-#' @export getXmlepisode
+#' @param id integer
 getXmlepisode <- function(xml.root, id) {
     xml.root[[1]][[2]][[id]]
 }
 
 #' Extract the original file name from a path and file removing
 #' all the suffixes.
+#'
 #' @param pathfile a particular file name which may have a suffix
 #' @param removestr last bit from the original filename
 #' @return string
-#' @export extract_file_origin
 extract_file_origin <- function(pathfile, removestr='.xml'){
   split_path <- unlist(strsplit(pathfile, "/"))
   filename <- split_path[length(split_path)]
@@ -190,9 +190,19 @@ extract_file_origin <- function(pathfile, removestr='.xml'){
   }
 
 
-#' convert xml data to ccdata format - [ready for retire]
-#' @param file xml file name
-#' @return ccdata 
+#' Convert the XML file to ccRecord 
+#' 
+#' Convert the XML file to ccRecord. For more details, see ccRecord-class. 
+#' 
+#' @param file character string. The path of XML file. 
+#' @param select.episode integer vector. Load only a selected number of episodes. 
+#' It is NULL by default which loads all the episodes in a file. 
+#' @param quiet logical. Switch on/off the progress bar. 
+#' @param xml XML object. Usually not needed. 
+#' @param file_origin character string. The XML file name. The file name will be 
+#' extracted automatically while argument xml is NULL. 
+#' @param parse_time POSIXct. By default is the time of the execution of this function. 
+#' @return ccRecord-class 
 #' @export xml2Data
 xml2Data <- function (file, select.episode=NULL, quiet=TRUE, xml=NULL,
                       file_origin="NA", parse_time=Sys.time()){
@@ -231,7 +241,6 @@ xml2Data <- function (file, select.episode=NULL, quiet=TRUE, xml=NULL,
     record <- ccRecord() + eps
     if (!quiet)
         cat("\n")
-
-
+    
     return(record)
 }
