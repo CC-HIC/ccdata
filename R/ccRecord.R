@@ -161,7 +161,12 @@ new.episode <- function(lt=list(), parse_file="NA", parse_time=as.POSIXct(NA)) {
             as.POSIXct(xmlTime2POSIX(lt[[stname2code(short.name[i])]], allow=T))
 
     eps@parse_file <- parse_file
-    eps@parse_time <- parse_time 
+    eps@parse_time <- parse_time
+
+
+    eps@data[["AGE"]] <- eps@t_admission -
+        xmlTime2POSIX(eps@data[[stname2code("DOB")]], allow=T)
+    eps@data[["LENSTAY"]] <- eps@t_discharge - eps@t_admission
     eps
 }
 
