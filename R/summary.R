@@ -62,7 +62,8 @@ episode.graph <- function(ccd, eid=601, items=NULL) {
                             name=paste0(ep@episode_id, "_", ep@site_id, "\n", 
                                        icnarc2diagnosis(ep@data[[stname2code('RAICU1')]]), "\n\n")) +  
         theme(legend.title = element_text(size=8), 
-              legend.text  = element_text(size=8)) +
+              legend.text  = element_text(size=8), 
+              legend.position="top") +
                             labs(x="", y="")
 
 
