@@ -2,6 +2,21 @@
 [![codecov](https://codecov.io/gh/CC-HIC/ccdata/branch/master/graph/badge.svg)](https://codecov.io/gh/CC-HIC/ccdata)
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
+# We have moved!
+Please check out here: https://github.com/CC-HIC/cleanEHR . 
+
+
+# How to make your old dataset cleanEHR compatible
+* You can request the latest dataset. 
+* To update locally, you can follow the steps below, 
+  * keep both cleanEHR and ccdata installed
+  * convert by running this script
+  * https://github.com/CC-HIC/cleanEHR/blob/master/inst/pipeline/ccdata2cleanEHR.r
+    `Rscript ccdata2cleanEHR.r delta_ccd.RData`
+  * remove ccdata package.
+
+
+
 `ccdata` is an R package for working with the Critical Care Health Informatics
 Collaborative's data set. Since 2014 data from the critical care units at
 Cambridge, Guys/Kings/St Thomas', Imperial, Oxford, and University College
